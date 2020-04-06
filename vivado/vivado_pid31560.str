@@ -1,0 +1,210 @@
+/*
+
+Vivado v2017.1 (64-bit)
+SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+
+Process ID: 31560
+License: Customer
+
+Current time: 	8/14/19 6:57:26 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: NAME="Ubuntu"
+OS Version: 5.0.0-23-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 338 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/bin/java
+Java library paths: /opt/Xilinx/Vivado/2017.1/tps/lnx64/libxslt/lib:/opt/Xilinx/Vivado/2017.1/lib/lnx64.o:/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/lib/amd64:/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/Vivado/2017.1/lnx64/tools/dot/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+User name: 	root
+User home directory: /root
+User working directory: /home/ryunosuke/Works/zynqberrydemo1/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2017.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2017.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2017.1/bin
+
+User preferences location: /home/ryunosuke/.Xilinx/Vivado
+Vivado preferences directory: /home/ryunosuke/.Xilinx/Vivado/2017.1/vivado.xml
+Vivado layouts directory: /home/ryunosuke/.Xilinx/Vivado/2017.1/layouts
+PlanAhead jar location: 	/opt/Xilinx/Vivado/2017.1/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	./.Xil/Vivado-31560-ryunosuke-dynabook-T552-58HB
+
+GUI allocated memory:	238 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 1,303 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 41 MB (+40947kb) [00:00:06]
+// [Engine Memory]: 976 MB (+872131kb) [00:00:06]
+// [GUI Memory]: 44 MB (+126kb) [00:00:06]
+// [GUI Memory]: 59 MB (+13655kb) [00:00:08]
+// [Engine Memory]: 1,152 MB (+133293kb) [00:00:08]
+// [GUI Memory]: 70 MB (+8834kb) [00:00:08]
+// [GUI Memory]: 76 MB (+2409kb) [00:00:09]
+// TclEventType: START_PROGRESS_DIALOG
+// [Engine Memory]: 1,210 MB (+62kb) [00:00:11]
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// [GUI Memory]: 89 MB (+9640kb) [00:00:12]
+// bs:g (cg:JFrame):  Sourcing Tcl script '../scripts/script_main.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: [TE_INIT-139] Run project finished without Error.    ------ 
+// Tcl Message: ----------------------------------------------------------------------- 
+dismissDialog("Sourcing Tcl script '../scripts/script_main.tcl'"); // bs:g (cg:JFrame)
+// [Engine Memory]: 1,286 MB (+16358kb) [00:00:13]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,321 MB. GUI used memory: 57 MB. Current time: 8/14/19 6:57:28 PM JST
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+// 'o' command handler elapsed time: 5 seconds
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 94 MB (+361kb) [00:00:45]
+// [GUI Memory]: 100 MB (+1339kb) [00:02:55]
+// [GUI Memory]: 105 MB (+540kb) [00:07:38]
+// Elapsed time: 1007 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: LOAD_FEATURE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: LOAD_FEATURE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: LOAD_FEATURE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0 Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0 Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_3 Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_4 Adding cell -- trenz.biz:user:axis_raw_demosaic:1.0 - axis_raw_demosaic_0 Adding cell -- trenz.biz:user:axis_raw_unpack:1.0 - axis_raw_unpack_0 Adding cell -- trenz.biz:user:csi2_d_phy_rx:1.0 - csi2_d_phy_rx_0 Adding cell -- trenz.biz:user:csi_to_axis:1.0 - csi_to_axis_0 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- digilentinc.com:user:axi_i2s_adi:1.2 - axi_i2s_adi_0 Adding cell -- trenz.biz:user:axis_to_i2s:1.0 - axis_to_i2s_0 Adding cell -- trenz.biz:user:i2s_to_pwm:1.0 - i2s_to_pwm_0 Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0 
+// Tcl Message: Successfully read diagram <zsys> from BD file </home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,356 MB. GUI used memory: 62 MB. Current time: 8/14/19 7:14:36 PM JST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 6354.430 ; gain = 32.266 ; free physical = 2185 ; free virtual = 6354 
+// [Engine Memory]: 1,360 MB (+10385kb) [00:17:24]
+// 'bv' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "pio"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "pio"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "pio"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+floatView(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax:DockableFrame (aF:FrameContainer, cg:JFrame)
+// PAResourceOtoP.PAViews_SYSTEM: System: float view
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (FrameFloatingContainer:ResizableFrame): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,393 MB. GUI used memory: 68 MB. Current time: 8/14/19 7:15:13 PM JST
+// Elapsed time: 99 seconds
+dismissDialog("Re-customize IP"); // p:g (FrameFloatingContainer:ResizableFrame)
+// [GUI Memory]: 112 MB (+930kb) [00:19:21]
+dockFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// PAResourceOtoP.PAViews_SYSTEM: System: dock view
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "addres", true); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADDRESSEDITOR_WINDOW
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+// [GUI Memory]: 119 MB (+1591kb) [00:30:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,395 MB. GUI used memory: 66 MB. Current time: 8/14/19 7:45:13 PM JST
+// Elapsed time: 2031 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,395 MB. GUI used memory: 63 MB. Current time: 8/14/19 8:32:25 PM JST
+// Elapsed time: 3500 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,395 MB. GUI used memory: 62 MB. Current time: 8/14/19 9:02:26 PM JST
+// Elapsed time: 1175 seconds
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // g:af (JViewport:JComponent, cg:JFrame) - Popup Trigger
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data_MM2S (32 address bits : 4G) ;  ;  ;  ;  ; ", 10, "Data_MM2S (32 address bits : 4G)", 0, true); // g:af (JViewport:JComponent, cg:JFrame) - Node
+collapseTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data_MM2S (32 address bits : 4G) ;  ;  ;  ;  ; ", 10); // g:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data_MM2S (32 address bits : 4G) ;  ;  ;  ;  ; ", 10); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_gpio_0 ; S_AXI ; Reg ; 0x4120_0000 ; 64K ; 0x4120_FFFF", 2, "axi_gpio_0", 0, false); // g:af (JViewport:JComponent, cg:JFrame)
+// Elapsed time: 414 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,401 MB. GUI used memory: 62 MB. Current time: 8/14/19 9:32:26 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,409 MB. GUI used memory: 62 MB. Current time: 8/14/19 10:02:26 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,409 MB. GUI used memory: 62 MB. Current time: 8/14/19 10:32:26 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,409 MB. GUI used memory: 61 MB. Current time: 8/14/19 11:03:11 PM JST

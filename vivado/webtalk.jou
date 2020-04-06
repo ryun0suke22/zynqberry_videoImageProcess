@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Aug 15 01:16:55 2019
+# Process ID: 8782
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/vivado
+# Command line: wbtcv -mode batch -source /home/ryunosuke/Works/zynqberrydemo1/vivado/PL_GPIO_TEST/PL_GPIO_TEST.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado/webtalk.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado/webtalk.jou
+#-----------------------------------------------------------
+source /home/ryunosuke/Works/zynqberrydemo1/vivado/PL_GPIO_TEST/PL_GPIO_TEST.hw/webtalk/labtool_webtalk.tcl -notrace

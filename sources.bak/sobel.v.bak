@@ -1,0 +1,38 @@
+`timescale 1ns / 1ps
+
+module sobel
+(
+ CLK, RESET,
+ D02IN, D01IN, D00IN, // Upper Line
+ D12IN, D11IN, D10IN, // Middle Line
+ D22IN, D21IN, D20IN, // Under Line
+ Dout
+);
+
+ input CLK, RESET;
+ input [23:0] D02IN,D01IN,D00IN;
+ input [23:0] D12IN,D11IN,D10IN;
+ input [23:0] D22IN,D21IN,D20IN;
+ output [23:0] Dout;
+ reg signed [11:0] tmp_x, tmp_y;
+ reg signed [13:0] tmp;
+
+ always @( posedge CLK ) begin
+   if(~RESET) begin tmp_x <= 0; tmp_y <= 0; end
+   else begin
+     tmp_x<=(D00IN[23:16]-D02IN[23:16]+(D10IN[23:16]<<1)-(D12IN[23:16]<<1)+D20IN[23:16]-D22IN[23:16]);
+     tmp_y<=(D20IN[23:16]+(D21IN[23:16]<<1)+D22IN[23:16]-D00IN[23:16]-(D01IN[23:16]<<1)-D02IN[23:16]);
+        end
+ end
+
+ always @( posedge CLK ) begin
+   if(~RESET) begin tmp <= 0; end
+   else begin
+     tmp_x<=tmp_x+tmp_y;
+        end
+ end
+
+assign tmp = tmp_x + tmp_y;
+assign Dout = (tmp>255) ? 255 : (tmp<0) ? 0 : { tmp[7:0],tmp[7:0],tmp[7:0] };
+
+ endmodule

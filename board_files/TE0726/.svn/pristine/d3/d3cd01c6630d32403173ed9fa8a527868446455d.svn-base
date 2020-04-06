@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<!-- ##################################################################### -->
+<!-- ##TE File Version:1.0-->
+<!-- ##TE Last Modification:2016.09.27-->
+<!-- ##################################################################### -->
+<ip_presets schema="1.0">
+  <!--insert ip presets here, see ug895 or other board part files-->
+  <ip_preset preset_proc_name="ps7_preset"> 
+    <ip vendor="xilinx.com" library="ip" name="processing_system7" version="*"> 
+      <user_parameters>
+        <user_parameter  name="CONFIG.PCW_APU_CLK_RATIO_ENABLE" value="6:2:1"/>
+        <user_parameter  name="CONFIG.PCW_ARMPLL_CTRL_FBDIV" value="25"/>
+        <user_parameter  name="CONFIG.PCW_CLK0_FREQ" value="49833332"/>
+        <user_parameter  name="CONFIG.PCW_CLK1_FREQ" value="99666664"/>
+        <user_parameter  name="CONFIG.PCW_CLK2_FREQ" value="49833332"/>
+        <user_parameter  name="CONFIG.PCW_CLK3_FREQ" value="49833332"/>
+        <user_parameter  name="CONFIG.PCW_CPU_CPU_6X4X_MAX_RANGE" value="667"/>
+        <user_parameter  name="CONFIG.PCW_CPU_CPU_PLL_FREQMHZ" value="1300.000"/>
+        <user_parameter  name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="52"/>
+        <user_parameter  name="CONFIG.PCW_DCI_PERIPHERAL_DIVISOR0" value="51"/>
+        <user_parameter  name="CONFIG.PCW_DCI_PERIPHERAL_DIVISOR1" value="2"/>
+        <user_parameter  name="CONFIG.PCW_DDR_DDR_PLL_FREQMHZ" value="1560.000"/>
+        <user_parameter  name="CONFIG.PCW_DDR_PERIPHERAL_DIVISOR0" value="4"/>
+        <user_parameter  name="CONFIG.PCW_DDR_RAM_HIGHADDR" value="0x03FFFFFF"/>
+        <user_parameter  name="CONFIG.PCW_DDRPLL_CTRL_FBDIV" value="20"/>
+        <user_parameter  name="CONFIG.PCW_DM_WIDTH" value="2"/>
+        <user_parameter  name="CONFIG.PCW_DQ_WIDTH" value="16"/>
+        <user_parameter  name="CONFIG.PCW_DQS_WIDTH" value="2"/>
+        <user_parameter  name="CONFIG.PCW_EN_CLK1_PORT" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_EMIO_I2C0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_EMIO_TTC0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_EMIO_UART0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_GPIO" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_I2C0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_I2C1" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_QSPI" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_SDIO1" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_TTC0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_UART0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_UART1" value="1"/>
+        <user_parameter  name="CONFIG.PCW_EN_USB0" value="1"/>
+        <user_parameter  name="CONFIG.PCW_ENET0_PERIPHERAL_CLKSRC" value="External"/>
+        <user_parameter  name="CONFIG.PCW_FCLK_CLK1_BUF" value="true"/>
+        <user_parameter  name="CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0" value="24"/>
+        <user_parameter  name="CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR1" value="1"/>
+        <user_parameter  name="CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR0" value="12"/>
+        <user_parameter  name="CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR0" value="24"/>
+        <user_parameter  name="CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0" value="24"/>
+        <user_parameter  name="CONFIG.PCW_FPGA_FCLK1_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ" value="100"/>
+        <user_parameter  name="CONFIG.PCW_GPIO_MIO_GPIO_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_GPIO_MIO_GPIO_IO" value="MIO"/>
+        <user_parameter  name="CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ" value="108.333336"/>
+        <user_parameter  name="CONFIG.PCW_I2C_RESET_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_I2C_RESET_SELECT" value="Share reset pin"/>
+        <user_parameter  name="CONFIG.PCW_I2C0_GRP_INT_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_I2C0_GRP_INT_IO" value="EMIO"/>
+        <user_parameter  name="CONFIG.PCW_I2C0_I2C0_IO" value="EMIO"/>
+        <user_parameter  name="CONFIG.PCW_I2C1_GRP_INT_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_I2C1_GRP_INT_IO" value="EMIO"/>
+        <user_parameter  name="CONFIG.PCW_I2C1_I2C1_IO" value="MIO 48 .. 49"/>
+        <user_parameter  name="CONFIG.PCW_I2C1_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_IO_IO_PLL_FREQMHZ" value="1196.000"/>
+        <user_parameter  name="CONFIG.PCW_IOPLL_CTRL_FBDIV" value="23"/>
+        <user_parameter  name="CONFIG.PCW_IRQ_F2P_INTR" value="1"/>
+        <user_parameter  name="CONFIG.PCW_MIO_0_DIRECTION" value="in"/>
+        <user_parameter  name="CONFIG.PCW_MIO_10_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_11_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_12_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_13_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_14_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_15_PULLUP" value="disabled"/>
+        <user_parameter  name="CONFIG.PCW_MIO_PRIMITIVE" value="32"/>
+        <user_parameter  name="CONFIG.PCW_PACKAGE_NAME" value="clg225"/>
+        <user_parameter  name="CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0" value="6"/>
+        <user_parameter  name="CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_QSPI_GRP_SINGLE_SS_IO" value="MIO 1 .. 6"/>
+        <user_parameter  name="CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0" value="6"/>
+        <user_parameter  name="CONFIG.PCW_QSPI_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_QSPI_QSPI_IO" value="MIO 1 .. 6"/>
+        <user_parameter  name="CONFIG.PCW_SD1_GRP_CD_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_SD1_GRP_CD_IO" value="MIO 0"/>
+        <user_parameter  name="CONFIG.PCW_SD1_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_SD1_SD1_IO" value="MIO 10 .. 15"/>
+        <user_parameter  name="CONFIG.PCW_SDIO_PERIPHERAL_DIVISOR0" value="12"/>
+        <user_parameter  name="CONFIG.PCW_SDIO_PERIPHERAL_VALID" value="1"/>
+        <user_parameter  name="CONFIG.PCW_TTC0_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_TTC0_TTC0_IO" value="EMIO"/>
+        <user_parameter  name="CONFIG.PCW_UART_PERIPHERAL_DIVISOR0" value="12"/>
+        <user_parameter  name="CONFIG.PCW_UART_PERIPHERAL_VALID" value="1"/>
+        <user_parameter  name="CONFIG.PCW_UART0_UART0_IO" value="EMIO"/>
+        <user_parameter  name="CONFIG.PCW_UART1_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_UART1_UART1_IO" value="MIO 8 .. 9"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_ACT_DDR_FREQ_MHZ" value="390.000000"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_BANK_ADDR_COUNT" value="2"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_CL" value="6"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_DEVICE_CAPACITY" value="512 MBits"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_DRAM_WIDTH" value="16 Bits"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_MEMORY_TYPE" value="LPDDR 2"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_PARTNO" value="Custom"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_ROW_ADDR_COUNT" value="13"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_SPEED_BIN" value="LPDDR2_800"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_DDR_T_RCD" value="8"/>
+        <user_parameter  name="CONFIG.PCW_UIPARAM_GENERATE_SUMMARY" value="NONE"/>
+        <user_parameter  name="CONFIG.PCW_USB_RESET_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_USB_RESET_SELECT" value="Share reset pin"/>
+        <user_parameter  name="CONFIG.PCW_USB0_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_USB0_RESET_ENABLE" value="1"/>
+        <user_parameter  name="CONFIG.PCW_USB0_RESET_IO" value="MIO 7"/>
+        <user_parameter  name="CONFIG.PCW_USB0_USB0_IO" value="MIO 28 .. 39"/>
+        <user_parameter  name="CONFIG.PCW_USE_FABRIC_INTERRUPT" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+   
+</ip_presets>

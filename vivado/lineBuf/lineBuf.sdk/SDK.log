@@ -1,0 +1,70 @@
+10:40:25 INFO  : Registering command handlers for SDK TCF services
+10:40:28 INFO  : Launching XSCT server: xsct -n -interactive /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/temp_xsdb_launch_script.tcl
+10:40:29 INFO  : XSCT server has started successfully.
+10:40:29 INFO  : Successfully done setting XSCT server connection channel  
+10:40:29 INFO  : Successfully done setting SDK workspace  
+10:40:29 INFO  : Processing command line option -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf.
+10:46:14 INFO  : No changes in MSS file content so not generating sources.
+10:46:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG-ONB4 25163300125BA" && level==0} -index 1' command is executed.
+10:46:42 INFO  : FPGA configured successfully with bitstream "/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper_hw_platform_0/zsys_wrapper.bit"
+10:48:16 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+10:48:16 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+10:48:16 INFO  : Bootgen command execution is done.
+10:50:33 INFO  : Launching XSCT server: xsct -n -interactive /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/temp_xsdb_launch_script.tcl
+10:50:34 INFO  : XSCT server has started successfully.
+10:50:34 INFO  : Successfully done setting XSCT server connection channel  
+10:50:34 INFO  : Successfully done setting SDK workspace  
+10:50:37 INFO  : Registering command handlers for SDK TCF services
+10:50:37 INFO  : Processing command line option -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf.
+10:50:38 INFO  : Checking for hwspec changes in the project zsys_wrapper_hw_platform_0.
+10:51:48 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+10:51:48 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+10:51:49 INFO  : Bootgen command execution is done.
+10:54:20 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+10:54:20 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+10:54:21 INFO  : Bootgen command execution is done.
+10:55:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:55:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "JTAG-ONB4 25163300125BA" && level==0} -index 1' command is executed.
+10:55:27 INFO  : FPGA configured successfully with bitstream "/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper_hw_platform_0/zsys_wrapper.bit"
+11:12:38 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+11:12:38 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+11:12:39 INFO  : Bootgen command execution is done.
+11:16:45 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+11:16:45 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+11:16:46 INFO  : Bootgen command execution is done.
+11:23:00 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+11:23:00 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+11:23:01 INFO  : Bootgen command execution is done.
+12:53:48 INFO  : Launching XSCT server: xsct -n -interactive /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/temp_xsdb_launch_script.tcl
+12:53:49 INFO  : XSCT server has started successfully.
+12:53:49 INFO  : Successfully done setting XSCT server connection channel  
+12:53:49 INFO  : Successfully done setting SDK workspace  
+12:53:52 INFO  : Registering command handlers for SDK TCF services
+12:53:52 INFO  : Processing command line option -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf.
+12:53:52 INFO  : Checking for hwspec changes in the project zsys_wrapper_hw_platform_0.
+12:57:54 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+12:57:54 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+12:57:55 INFO  : Bootgen command execution is done.
+13:15:57 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+13:15:57 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+13:15:58 INFO  : Bootgen command execution is done.
+15:08:12 INFO  : Launching XSCT server: xsct -n -interactive /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/temp_xsdb_launch_script.tcl
+15:08:13 INFO  : XSCT server has started successfully.
+15:08:13 INFO  : Successfully done setting XSCT server connection channel  
+15:08:13 INFO  : Successfully done setting SDK workspace  
+15:08:16 INFO  : Registering command handlers for SDK TCF services
+15:08:16 INFO  : Processing command line option -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf.
+15:08:16 INFO  : Checking for hwspec changes in the project zsys_wrapper_hw_platform_0.
+15:09:43 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+15:09:43 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+15:09:45 INFO  : Bootgen command execution is done.
+15:21:05 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+15:21:05 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+15:21:06 INFO  : Bootgen command execution is done.
+15:35:37 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+15:35:37 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+15:35:38 INFO  : Bootgen command execution is done.
+15:43:45 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin -w on
+15:43:45 INFO  : Overwriting existing bif file /home/ryunosuke/Works/zynqberrydemo1/image/output.bif
+15:43:46 INFO  : Bootgen command execution is done.

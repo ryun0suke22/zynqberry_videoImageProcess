@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Aug  8 15:26:23 2019
+# Process ID: 17859
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/AddrManager.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/lineBufBlock.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/test_LineBufPassThrough.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/sobel.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/passThrough.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/enhancement.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/ClockedOneShot.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/GrayScale.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/ImgProcessMux.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/negPosInv.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/ryunosuke/Works/zynqberrydemo1/sources/ImageProcess.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ryunosuke/Works/zynqberrydemo1/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'zsys_rst_processing_system7_0_50M_0' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_2' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_1' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_0' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 6260.344 ; gain = 255.020 ; free physical = 3074 ; free virtual = 7154
+update_compile_order -fileset sources_1
+remove_files  /home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/test_LineBufPassThrough.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  8 15:30:35 2019...

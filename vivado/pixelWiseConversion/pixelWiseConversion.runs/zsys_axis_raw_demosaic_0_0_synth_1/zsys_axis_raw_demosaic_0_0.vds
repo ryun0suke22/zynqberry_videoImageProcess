@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jul 26 10:23:32 2019
+# Process ID: 13333
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axis_raw_demosaic_0_0_synth_1
+# Command line: vivado -log zsys_axis_raw_demosaic_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_axis_raw_demosaic_0_0.tcl
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axis_raw_demosaic_0_0_synth_1/zsys_axis_raw_demosaic_0_0.vds
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axis_raw_demosaic_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zsys_axis_raw_demosaic_0_0.tcl -notrace
+Command: synth_design -top zsys_axis_raw_demosaic_0_0 -part xc7z010clg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13498 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1142.371 ; gain = 59.000 ; free physical = 1415 ; free virtual = 4372
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_raw_demosaic_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/synth/zsys_axis_raw_demosaic_0_0.vhd:74]
+	Parameter C_RAW_WIDTH bound to: 10 - type: integer 
+	Parameter C_MODE bound to: 1 - type: integer 
+	Parameter C_IN_TYPE bound to: 1 - type: integer 
+	Parameter C_COLOR_POS bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'axis_raw_demosaic_v1_0' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:11' bound to instance 'U0' of component 'axis_raw_demosaic_v1_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/synth/zsys_axis_raw_demosaic_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'axis_raw_demosaic_v1_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:38]
+	Parameter C_MODE bound to: 1 - type: integer 
+	Parameter C_COLOR_POS bound to: 2 - type: integer 
+	Parameter C_IN_TYPE bound to: 1 - type: integer 
+	Parameter C_RAW_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'dualport_ram' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/dualport_ram.vhd:9' bound to instance 'ram_inst' of component 'dualport_ram' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'dualport_ram' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/dualport_ram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'dualport_ram' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/dualport_ram.vhd:20]
+INFO: [Synth 8-3491] module 'gamma_rom' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:9' bound to instance 'pa_gamma_inst' of component 'gamma_rom' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'gamma_rom' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:17]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'gamma_rom' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:17]
+INFO: [Synth 8-3491] module 'gamma_rom' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:9' bound to instance 'pa_gamma_inst' of component 'gamma_rom' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:174]
+INFO: [Synth 8-3491] module 'gamma_rom' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:9' bound to instance 'pa_gamma_inst' of component 'gamma_rom' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:174]
+INFO: [Synth 8-3491] module 'gamma_rom' declared at '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:9' bound to instance 'pa_gamma_inst' of component 'gamma_rom' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:174]
+INFO: [Synth 8-226] default block is never used [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:216]
+INFO: [Synth 8-226] default block is never used [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'axis_raw_demosaic_v1_0' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axis_raw_demosaic_0_0' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/synth/zsys_axis_raw_demosaic_0_0.vhd:74]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port axis_aresetn
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[15]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[14]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[13]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[12]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[11]
+WARNING: [Synth 8-3331] design axis_raw_demosaic_v1_0 has unconnected port s_axis_tdata[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1182.871 ; gain = 99.500 ; free physical = 1403 ; free virtual = 4363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1182.871 ; gain = 99.500 ; free physical = 1390 ; free virtual = 4356
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1530.062 ; gain = 0.000 ; free physical = 430 ; free virtual = 3406
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 236 ; free virtual = 3213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 236 ; free virtual = 3213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 237 ; free virtual = 3214
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element douta_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/gamma_rom.vhd:94]
+INFO: [Synth 8-4471] merging register 'x_rd_addr_reg[15:0]' into 'x_cnt_reg[15:0]' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element x_rd_addr_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_wr_addr_reg' and it is trimmed from '16' to '11' bits. [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:88]
+INFO: [Synth 8-5544] ROM "m_axis_tvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:119]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 211 ; free virtual = 3187
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              20K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dualport_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
++---RAMs : 
+	              20K Bit         RAMs := 1     
+Module gamma_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module axis_raw_demosaic_v1_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U0/x_cnt_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element U0/y_cnt_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/2bd3/hdl/axis_raw_demosaic_v1_0.vhd:119]
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[31] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[30] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[29] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[28] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[27] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[26] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[25] driven by constant 0
+INFO: [Synth 8-3917] design zsys_axis_raw_demosaic_0_0 has port m_axis_tdata[24] driven by constant 0
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port axis_aresetn
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[15]
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[14]
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[13]
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[12]
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[11]
+WARNING: [Synth 8-3331] design zsys_axis_raw_demosaic_0_0 has unconnected port s_axis_tdata[10]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/ram_inst/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'U0/x_wr_addr_reg[0]' (FDE) to 'U0/position_reg[0]'
+INFO: [Synth 8-3332] Sequential element (U0/x_cnt_reg[11]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/x_cnt_reg[12]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/x_cnt_reg[13]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/x_cnt_reg[14]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/x_cnt_reg[15]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[1]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[2]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[3]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[4]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[5]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[6]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[7]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[8]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[9]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[10]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[11]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[12]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[13]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[14]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/y_cnt_reg[15]) is unused and will be removed from module zsys_axis_raw_demosaic_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 137 ; free virtual = 3113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|gamma_rom   | douta_reg  | 1024x8        | Block RAM      | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dualport_ram: | ram_reg    | 2 K x 10(READ_FIRST)   | W |   | 2 K x 10(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 873 ; free virtual = 3630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 896 ; free virtual = 3653
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/gamma_rom_gen[0].pa_gamma_inst/douta_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/gamma_rom_gen[0].pa_gamma_inst/douta_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/gamma_rom_gen[2].pa_gamma_inst/douta_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/gamma_rom_gen[2].pa_gamma_inst/douta_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 911 ; free virtual = 3668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 804 ; free virtual = 3568
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 804 ; free virtual = 3568
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 802 ; free virtual = 3566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 801 ; free virtual = 3565
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 796 ; free virtual = 3559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 795 ; free virtual = 3558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     3|
+|2     |LUT2     |    13|
+|3     |LUT3     |    19|
+|4     |LUT4     |    10|
+|5     |LUT5     |     1|
+|6     |LUT6     |    17|
+|7     |RAMB18E1 |     2|
+|8     |RAMB36E1 |     1|
+|9     |FDRE     |    60|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------+------+
+|      |Instance                             |Module                 |Cells |
++------+-------------------------------------+-----------------------+------+
+|1     |top                                  |                       |   126|
+|2     |  U0                                 |axis_raw_demosaic_v1_0 |   126|
+|3     |    \gamma_rom_gen[0].pa_gamma_inst  |gamma_rom              |     1|
+|4     |    \gamma_rom_gen[2].pa_gamma_inst  |gamma_rom_0            |     1|
+|5     |    ram_inst                         |dualport_ram           |     2|
++------+-------------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 794 ; free virtual = 3558
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1530.062 ; gain = 99.500 ; free physical = 810 ; free virtual = 3574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1530.062 ; gain = 446.691 ; free physical = 814 ; free virtual = 3577
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+64 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1538.070 ; gain = 467.281 ; free physical = 918 ; free virtual = 3682
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axis_raw_demosaic_0_0_synth_1/zsys_axis_raw_demosaic_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axis_raw_demosaic_0_0_synth_1/zsys_axis_raw_demosaic_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1562.082 ; gain = 0.000 ; free physical = 1380 ; free virtual = 4145
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 26 10:24:33 2019...

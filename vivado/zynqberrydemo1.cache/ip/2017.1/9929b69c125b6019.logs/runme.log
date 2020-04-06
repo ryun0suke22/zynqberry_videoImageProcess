@@ -1,0 +1,248 @@
+
+*** Running vivado
+    with args -log zsys_axi_vdma_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_axi_vdma_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_axi_vdma_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1153.371 ; gain = 70.000 ; free physical = 2008 ; free virtual = 5309
+INFO: [Synth 8-638] synthesizing module 'zsys_axi_vdma_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/synth/zsys_axi_vdma_0_0.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:69480]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:14862]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:14862]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:16952]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:16952]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:40370]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (5#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:40370]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:41227]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (6#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:41227]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:18712]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (7#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:18712]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:20526]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (8#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:20526]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (9#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (10#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:61558]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (11#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:61558]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:62697]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (12#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:62697]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:63204]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (13#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:63204]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:53625]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (14#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:53625]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (15#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (16#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:58282]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (17#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:58282]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (18#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:52754]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (19#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:52754]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:13249]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (20#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:13249]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:40980]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (21#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:40980]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_linebuf' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:48936]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sfifo' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:41782]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sfifo' (48#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:41782]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_linebuf' (49#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:48936]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_omit_wrap' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:53186]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_omit_wrap' (50#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:53186]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (51#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (52#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (53#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (54#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (55#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (56#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (56#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (56#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (56#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (56#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (57#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (58#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:25723]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (59#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:25723]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:46998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (59#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (59#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (59#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (59#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_dre' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:36555]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux2_1_x_n' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:29942]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux2_1_x_n' (60#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:29942]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux4_1_x_n' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:30089]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux4_1_x_n' (61#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:30089]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_dre' (62#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:36555]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:45105]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:44155]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:42595]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (63#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:42595]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (64#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:44155]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (65#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:44844]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:44844]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized1' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (66#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (67#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:45105]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (68#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:46998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:28422]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set' (69#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (74#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (75#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized0' (75#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (75#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set__parameterized0' (75#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (76#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (77#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:28422]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (77#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (77#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (77#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (77#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized6' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized6' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized6' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized6' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized6' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (78#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (79#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (80#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (81#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (82#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (83#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/9afd/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (84#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/47ae/hdl/axi_vdma_v6_3_rfs.vhd:69480]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axi_vdma_0_0' (85#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axi_vdma_0_0/synth/zsys_axi_vdma_0_0.vhd:108]
+Finished RTL Elaboration : Time (s): cpu = 00:06:14 ; elapsed = 00:06:20 . Memory (MB): peak = 1438.340 ; gain = 354.969 ; free physical = 3058 ; free virtual = 6425
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:15 ; elapsed = 00:06:21 . Memory (MB): peak = 1438.340 ; gain = 354.969 ; free physical = 3079 ; free virtual = 6446
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1620.945 ; gain = 0.000 ; free physical = 2782 ; free virtual = 6149
+Finished Constraint Validation : Time (s): cpu = 00:06:27 ; elapsed = 00:06:33 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2908 ; free virtual = 6275
+Finished Loading Part and Timing Information : Time (s): cpu = 00:06:27 ; elapsed = 00:06:33 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2908 ; free virtual = 6275
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:27 ; elapsed = 00:06:33 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2910 ; free virtual = 6277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:30 ; elapsed = 00:06:38 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2986 ; free virtual = 6354
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:38 ; elapsed = 00:06:46 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2899 ; free virtual = 6267
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                                                                                                                                                                                        | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 8 x 11               | RAM32M x 2   | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:45 ; elapsed = 00:06:53 . Memory (MB): peak = 1620.945 ; gain = 537.574 ; free physical = 2746 ; free virtual = 6114
+Finished Timing Optimization : Time (s): cpu = 00:06:49 ; elapsed = 00:06:57 . Memory (MB): peak = 1640.148 ; gain = 556.777 ; free physical = 2640 ; free virtual = 6008
+Finished Technology Mapping : Time (s): cpu = 00:06:51 ; elapsed = 00:06:59 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2560 ; free virtual = 5928
+Finished IO Insertion : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2536 ; free virtual = 5904
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2536 ; free virtual = 5904
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2515 ; free virtual = 5883
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2515 ; free virtual = 5883
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2515 ; free virtual = 5883
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2513 ; free virtual = 5881
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    65|
+|2     |LUT1       |   425|
+|3     |LUT2       |   285|
+|4     |LUT3       |   412|
+|5     |LUT4       |   274|
+|6     |LUT5       |   220|
+|7     |LUT6       |   347|
+|8     |MUXCY      |    24|
+|9     |MUXF7      |     8|
+|10    |RAM32M     |     2|
+|11    |RAMB18E1   |     1|
+|12    |RAMB18E1_1 |     1|
+|13    |RAMB36E1   |     1|
+|14    |RAMB36E1_1 |     4|
+|15    |SRL16E     |   176|
+|16    |FDRE       |  1877|
+|17    |FDSE       |    64|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:52 ; elapsed = 00:07:00 . Memory (MB): peak = 1656.164 ; gain = 572.793 ; free physical = 2513 ; free virtual = 5881
+synth_design: Time (s): cpu = 00:06:55 ; elapsed = 00:07:03 . Memory (MB): peak = 1688.180 ; gain = 617.391 ; free physical = 2598 ; free virtual = 5966

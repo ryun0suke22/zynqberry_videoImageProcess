@@ -1,0 +1,18 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port ext_reset_in -pg 1 -y 60 -defaultsOSRD
+preplace port axi_clk -pg 1 -y 40 -defaultsOSRD
+preplace portBus axi_int_aresetn -pg 1 -y 100 -defaultsOSRD
+preplace portBus peripheral_reset -pg 1 -y 80 -defaultsOSRD
+preplace portBus axi_per_aresetn -pg 1 -y 120 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace netloc rst_processing_system7_0_50M_peripheral_reset 1 1 1 NJ
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 1 NJ
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 1 NJ
+preplace netloc ext_reset_in_1 1 0 1 NJ
+preplace netloc slowest_sync_clk_1 1 0 1 NJ
+levelinfo -pg 1 -10 190 390 -top -10 -bot 170
+",
+}
+0

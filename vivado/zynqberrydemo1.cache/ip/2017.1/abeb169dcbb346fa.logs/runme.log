@@ -1,0 +1,61 @@
+
+*** Running vivado
+    with args -log zsys_xlslice_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_xlslice_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_xlslice_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1142.371 ; gain = 59.000 ; free physical = 131 ; free virtual = 1896
+INFO: [Synth 8-638] synthesizing module 'zsys_xlslice_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice_v1_0_1_xlslice' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/bb23/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_v1_0_1_xlslice' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/bb23/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xlslice_0_0' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1182.871 ; gain = 99.500 ; free physical = 180 ; free virtual = 1704
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1182.871 ; gain = 99.500 ; free physical = 261 ; free virtual = 1798
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+
+*** Running vivado
+    with args -log zsys_xlslice_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_xlslice_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_xlslice_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1143.367 ; gain = 60.000 ; free physical = 1061 ; free virtual = 5398
+INFO: [Synth 8-638] synthesizing module 'zsys_xlslice_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice_v1_0_1_xlslice' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/bb23/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xlslice_v1_0_1_xlslice' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/bb23/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xlslice_0_0' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xlslice_0_0/synth/zsys_xlslice_0_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.867 ; gain = 100.500 ; free physical = 1059 ; free virtual = 5414
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.867 ; gain = 100.500 ; free physical = 1060 ; free virtual = 5415
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1445.082 ; gain = 0.000 ; free physical = 377 ; free virtual = 4205
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1445.082 ; gain = 361.715 ; free physical = 395 ; free virtual = 4232
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1445.082 ; gain = 361.715 ; free physical = 394 ; free virtual = 4231
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1445.082 ; gain = 361.715 ; free physical = 394 ; free virtual = 4231
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1445.082 ; gain = 361.715 ; free physical = 393 ; free virtual = 4230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1445.082 ; gain = 361.715 ; free physical = 335 ; free virtual = 4174
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1459.066 ; gain = 375.699 ; free physical = 136 ; free virtual = 3367
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1459.066 ; gain = 375.699 ; free physical = 140 ; free virtual = 3372
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 164 ; free virtual = 3396
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 186 ; free virtual = 3419
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 181 ; free virtual = 3414
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 174 ; free virtual = 3406
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 169 ; free virtual = 3402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 185 ; free virtual = 3417
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 182 ; free virtual = 3415
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.082 ; gain = 385.715 ; free physical = 185 ; free virtual = 3417
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1474.082 ; gain = 403.297 ; free physical = 203 ; free virtual = 3379

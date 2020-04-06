@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Jul 25 09:53:09 2019
+# Process ID: 22909
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+update_compile_order -fileset sources_1
+file copy -force /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit
+file mkdir /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk
+write_hwdef -force  -file /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+file copy -force /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.sysdef /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+
+launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf

@@ -1,0 +1,152 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Jun 12 13:57:38 2017
+| Host         : W8-64-02 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 29 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                          | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                        |            |                     | Log       |                    | Version |               | License    |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_Video_IO_2_HDMI_TMDS_0_0          | Up-to-date | No changes required | Change    | Video IO to HDMI   | 1.0     | 1.0 (Rev. 26) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   | TMDS Interface     | (Rev.   |               |            |                      |
+|                                        |            |                     | available | v1.0               | 26)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_i2s_adi_0_0                   | Up-to-date | No changes required | Change    | AXI I2S Audio      | 1.2     | 1.2 (Rev. 1)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 1)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_interconnect_0_0              | Up-to-date | No changes required |  *(1)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_mem_intercon_0                | Up-to-date | No changes required |  *(2)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_reg32_0_0                     | Up-to-date | No changes required | Change    | AXI Register Bank  | 1.0     | 1.0 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   | 16/16 v1.0         | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_vdma_0_0                      | Up-to-date | No changes required |  *(3)     | AXI Video Direct   | 6.3     | 6.3           | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Memory Access      |         |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axi_vdma_0_1                      | Up-to-date | No changes required |  *(4)     | AXI Video Direct   | 6.3     | 6.3           | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Memory Access      |         |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_data_fifo_0_0                | Up-to-date | No changes required |  *(5)     | AXI4-Stream Data   | 1.1     | 1.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | FIFO               | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_data_fifo_3_0                | Up-to-date | No changes required |  *(6)     | AXI4-Stream Data   | 1.1     | 1.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | FIFO               | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_data_fifo_4_0                | Up-to-date | No changes required |  *(7)     | AXI4-Stream Data   | 1.1     | 1.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | FIFO               | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_fb_conv_0_0                  | Up-to-date | No changes required | Change    | axis_fb_conv_v1.0  | 1.0     | 1.0 (Rev. 5)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 5)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_raw_demosaic_0_0             | Up-to-date | No changes required | Change    | RAW Demosaic v1.0  | 1.0     | 1.0 (Rev. 20) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 20)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_raw_unpack_0_0               | Up-to-date | No changes required | Change    | RAW10 Unpack v1.0  | 1.0     | 1.0 (Rev. 17) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 17)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_axis_to_i2s_0_0                   | Up-to-date | No changes required | Change    | AXI4-Stream to I2S | 1.0     | 1.0 (Rev. 4)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   | v1.0               | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 4)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_clk_wiz_1_0                       | Up-to-date | No changes required | *(8)      | Clocking Wizard    | 5.4     | 5.4           | Included   | xc7z010clg225-1      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_csi2_d_phy_rx_0_0                 | Up-to-date | No changes required | Change    | CSI-2 D-PHY RX     | 1.0     | 1.0 (Rev. 35) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   | v1_0               | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 35)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_csi_to_axis_0_0                   | Up-to-date | No changes required | Change    | CSI-2 to           | 1.0     | 1.0 (Rev. 46) | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   | AXI4-Stream v1.0   | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 46)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_i2s_to_pwm_0_0                    | Up-to-date | No changes required | Change    | I2S to PWM v1.0    | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 7)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_proc_sys_reset_0_0                | Up-to-date | No changes required |  *(9)     | Processor System   | 5.0     | 5.0 (Rev. 11) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 11)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_proc_sys_reset_1_0                | Up-to-date | No changes required |  *(10)    | Processor System   | 5.0     | 5.0 (Rev. 11) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 11)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_processing_system7_0_0            | Up-to-date | No changes required |  *(11)    | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 5)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | System             | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 5)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_processing_system7_0_axi_periph_0 | Up-to-date | No changes required |  *(12)    | AXI Interconnect   | 2.1     | 2.1 (Rev. 13) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 13)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_rst_processing_system7_0_50M_0    | Up-to-date | No changes required |  *(13)    | Processor System   | 5.0     | 5.0 (Rev. 11) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 11)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_v_axi4s_vid_out_0_0               | Up-to-date | No changes required |  *(14)    | AXI4-Stream to     | 4.0     | 4.0 (Rev. 6)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Video Out          | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 6)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_v_tc_0_0                          | Up-to-date | No changes required |  *(15)    | Video Timing       | 6.1     | 6.1 (Rev. 10) | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           | Controller         | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 10)     |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_xadc_wiz_0_0                      | Up-to-date | No changes required |  *(16)    | XADC Wizard        | 3.3     | 3.3 (Rev. 3)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 3)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_xlconcat_0_0                      | Up-to-date | No changes required |  *(17)    | Concat             | 2.1     | 2.1 (Rev. 1)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                        |            |                     |           |                    | 1)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_xlslice_0_0                       | Up-to-date | No changes required | Change    | Slice              | 1.0     | 1.0 (Rev. 1)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 1)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| zsys_xlslice_1_0                       | Up-to-date | No changes required | Change    | Slice              | 1.0     | 1.0 (Rev. 1)  | Included   | xc7z010clg225-1      |
+|                                        |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                        |            |                     | available |                    | 1)      |               |            |                      |
++----------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(2) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(3) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(4) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(5) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axis_data_fifo_v1_1/doc/axis_data_fifo_v1_1_changelog.txt
+*(6) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axis_data_fifo_v1_1/doc/axis_data_fifo_v1_1_changelog.txt
+*(7) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axis_data_fifo_v1_1/doc/axis_data_fifo_v1_1_changelog.txt
+*(8) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/clk_wiz_v5_4/doc/clk_wiz_v5_4_changelog.txt
+*(9) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(10) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(11) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(12) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(13) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(14) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(15) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/v_tc_v6_1/doc/v_tc_v6_1_changelog.txt
+*(16) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/xadc_wiz_v3_3/doc/xadc_wiz_v3_3_changelog.txt
+*(17) c:/Xilinx/Vivado/2017.1/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+
+

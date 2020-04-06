@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 30 11:25:10 2019
+# Process ID: 19136
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+update_compile_order -fileset sources_1
+update_module_reference zsys_test_LineBufPassThrough_0_1
+add_files -norecurse /home/ryunosuke/Works/zynqberrydemo1/sources/passThrough.v
+update_module_reference zsys_test_LineBufPassThrough_0_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+reset_run synth_1

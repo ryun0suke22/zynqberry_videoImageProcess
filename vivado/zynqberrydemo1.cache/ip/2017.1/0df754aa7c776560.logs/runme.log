@@ -1,0 +1,78 @@
+
+*** Running vivado
+    with args -log zsys_xadc_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_xadc_wiz_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_xadc_wiz_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1143.375 ; gain = 60.000 ; free physical = 122 ; free virtual = 1903
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0_axi_xadc' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_axi_xadc.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0_xadc_core_drp' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_xadc_core_drp.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'drp_to_axi4stream' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_drp_to_axi_stream.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'drp_to_axi4stream' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_drp_to_axi_stream.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0_xadc_core_drp' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_xadc_core_drp.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0_axi_xadc' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_axi_xadc.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.v:53]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.875 ; gain = 100.500 ; free physical = 321 ; free virtual = 1874
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.875 ; gain = 100.500 ; free physical = 280 ; free virtual = 1843
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+
+*** Running vivado
+    with args -log zsys_xadc_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_xadc_wiz_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_xadc_wiz_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1143.375 ; gain = 60.000 ; free physical = 1111 ; free virtual = 5448
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0_axi_xadc' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_axi_xadc.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'zsys_xadc_wiz_0_0_xadc_core_drp' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_xadc_core_drp.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'drp_to_axi4stream' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_drp_to_axi_stream.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'drp_to_axi4stream' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_drp_to_axi_stream.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0_xadc_core_drp' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_xadc_core_drp.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0_axi_xadc' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_axi_xadc.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'zsys_xadc_wiz_0_0' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.v:53]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1183.875 ; gain = 100.500 ; free physical = 992 ; free virtual = 5346
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1183.875 ; gain = 100.500 ; free physical = 1026 ; free virtual = 5380
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1491.105 ; gain = 0.000 ; free physical = 426 ; free virtual = 4254
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 333 ; free virtual = 4172
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 333 ; free virtual = 4172
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 333 ; free virtual = 4172
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 301 ; free virtual = 4136
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 267 ; free virtual = 4102
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 197 ; free virtual = 3429
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.105 ; gain = 407.730 ; free physical = 192 ; free virtual = 3424
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 183 ; free virtual = 3416
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 117 ; free virtual = 3314
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 119 ; free virtual = 3313
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 126 ; free virtual = 3313
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 132 ; free virtual = 3318
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 142 ; free virtual = 3320
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 149 ; free virtual = 3324
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |FIFO18E1 |     2|
+|2     |LUT1     |     2|
+|3     |LUT2     |     4|
+|4     |LUT3     |     1|
+|5     |LUT4     |     1|
+|6     |LUT5     |     6|
+|7     |LUT6     |     6|
+|8     |XADC     |     1|
+|9     |FDCE     |    12|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.121 ; gain = 414.746 ; free physical = 147 ; free virtual = 3322
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1530.137 ; gain = 459.344 ; free physical = 1028 ; free virtual = 4228

@@ -1,0 +1,610 @@
+
+*** Running vivado
+    with args -log zsys_test_LineBufPassThrough_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_test_LineBufPassThrough_0_1.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_test_LineBufPassThrough_0_1.tcl -notrace
+Command: synth_design -top zsys_test_LineBufPassThrough_0_1 -part xc7z010clg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16654 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1144.371 ; gain = 60.992 ; free physical = 1327 ; free virtual = 5527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zsys_test_LineBufPassThrough_0_1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_test_LineBufPassThrough_0_1/synth/zsys_test_LineBufPassThrough_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'test_LineBufPassThrough' [/home/ryunosuke/Works/zynqberrydemo1/sources/test_LineBufPassThrough.v:2]
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'AddrManager' [/home/ryunosuke/Works/zynqberrydemo1/sources/AddrManager.v:2]
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+	Parameter EndLineH bound to: 1280 - type: integer 
+	Parameter Hsync_back bound to: 220 - type: integer 
+	Parameter output_gap bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AddrManager' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/AddrManager.v:2]
+INFO: [Synth 8-638] synthesizing module 'LineBuffer_4lines' [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:1]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+	Parameter ADRSWidth bound to: 21 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'LineAddress' should be on the sensitivity list [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:26]
+INFO: [Synth 8-638] synthesizing module 'lineBufBlock' [/home/ryunosuke/Works/zynqberrydemo1/sources/lineBufBlock.v:2]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter ADRSWidth bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lineBufBlock' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/lineBufBlock.v:2]
+INFO: [Synth 8-256] done synthesizing module 'LineBuffer_4lines' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:1]
+INFO: [Synth 8-638] synthesizing module 'ImgProcessMux' [/home/ryunosuke/Works/zynqberrydemo1/sources/ImgProcessMux.v:7]
+INFO: [Synth 8-226] default block is never used [/home/ryunosuke/Works/zynqberrydemo1/sources/ImgProcessMux.v:19]
+INFO: [Synth 8-256] done synthesizing module 'ImgProcessMux' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/ImgProcessMux.v:7]
+INFO: [Synth 8-638] synthesizing module 'GrayScale' [/home/ryunosuke/Works/zynqberrydemo1/sources/GrayScale.v:7]
+INFO: [Synth 8-256] done synthesizing module 'GrayScale' (5#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/GrayScale.v:7]
+INFO: [Synth 8-638] synthesizing module 'negPosInv' [/home/ryunosuke/Works/zynqberrydemo1/sources/negPosInv.v:7]
+INFO: [Synth 8-256] done synthesizing module 'negPosInv' (6#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/negPosInv.v:7]
+INFO: [Synth 8-638] synthesizing module 'laplacian' [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:3]
+INFO: [Synth 8-256] done synthesizing module 'laplacian' (7#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:3]
+INFO: [Synth 8-256] done synthesizing module 'test_LineBufPassThrough' (8#1) [/home/ryunosuke/Works/zynqberrydemo1/sources/test_LineBufPassThrough.v:2]
+INFO: [Synth 8-256] done synthesizing module 'zsys_test_LineBufPassThrough_0_1' (9#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_test_LineBufPassThrough_0_1/synth/zsys_test_LineBufPassThrough_0_1.v:56]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[23]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[22]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[21]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[20]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[19]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[18]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[17]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[16]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[15]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[14]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[13]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[12]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[11]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[10]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[9]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[8]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[7]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[6]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[5]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[4]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[3]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[2]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[1]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D02IN[0]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[23]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[22]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[21]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[20]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[19]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[18]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[17]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[16]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[15]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[14]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[13]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[12]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[11]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[10]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[9]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[8]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[7]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[6]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[5]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[4]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[3]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[2]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[1]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D00IN[0]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[23]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[22]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[21]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[20]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[19]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[18]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[17]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[16]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[15]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[14]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[13]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[12]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[11]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[10]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[9]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[8]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[7]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[6]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[5]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[4]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[3]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[2]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[1]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D22IN[0]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[23]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[22]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[21]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[20]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[19]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[18]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[17]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[16]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[15]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[14]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[13]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[12]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[11]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[10]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[9]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[8]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[7]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[6]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[5]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[4]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[3]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[2]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[1]
+WARNING: [Synth 8-3331] design laplacian has unconnected port D20IN[0]
+WARNING: [Synth 8-3331] design negPosInv has unconnected port i_VDE
+WARNING: [Synth 8-3331] design LineBuffer_4lines has unconnected port RA[20]
+WARNING: [Synth 8-3331] design LineBuffer_4lines has unconnected port RA[19]
+WARNING: [Synth 8-3331] design LineBuffer_4lines has unconnected port RA[18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1185.871 ; gain = 102.492 ; free physical = 1337 ; free virtual = 5537
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1185.871 ; gain = 102.492 ; free physical = 1338 ; free virtual = 5538
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1534.094 ; gain = 1.000 ; free physical = 1111 ; free virtual = 5311
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1188 ; free virtual = 5389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1188 ; free virtual = 5389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1189 ; free virtual = 5390
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "V_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element V_addr_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/sources/AddrManager.v:21]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:23]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:27]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:25]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:29]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:23]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:27]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:25]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:29]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:35]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:23]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:27]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:25]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/sources/laplacian.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel3_reg' [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel2_reg' [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel1_reg' [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel0_reg' [/home/ryunosuke/Works/zynqberrydemo1/sources/LineBuffer_4lines.v:28]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1181 ; free virtual = 5382
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 20    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              30K Bit         RAMs := 4     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 4     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AddrManager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module lineBufBlock 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---RAMs : 
+	              30K Bit         RAMs := 1     
+Module LineBuffer_4lines 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module ImgProcessMux 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+Module GrayScale 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module laplacian 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     12 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 5     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module test_LineBufPassThrough 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "V_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element V_addr_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/sources/AddrManager.v:21]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM inst/SorterLineBuffer_4lines/LineBuffer0/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM inst/SorterLineBuffer_4lines/LineBuffer1/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM inst/SorterLineBuffer_4lines/LineBuffer2/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM inst/SorterLineBuffer_4lines/LineBuffer3/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[0]' (FDC) to 'inst/unit_IPM/Digit2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[1]' (FDC) to 'inst/unit_IPM/Digit2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[2]' (FDC) to 'inst/unit_IPM/Digit2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[3]' (FDC) to 'inst/unit_IPM/Digit2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[4]' (FDC) to 'inst/unit_IPM/Digit2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[5]' (FDC) to 'inst/unit_IPM/Digit2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[6]' (FDC) to 'inst/unit_IPM/Digit2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[7]' (FDC) to 'inst/unit_IPM/Digit2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[8]' (FDC) to 'inst/unit_IPM/Digit2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[9]' (FDC) to 'inst/unit_IPM/Digit2_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[10]' (FDC) to 'inst/unit_IPM/Digit2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[11]' (FDC) to 'inst/unit_IPM/Digit2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[12]' (FDC) to 'inst/unit_IPM/Digit2_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[13]' (FDC) to 'inst/unit_IPM/Digit2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[14]' (FDC) to 'inst/unit_IPM/Digit2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[15]' (FDC) to 'inst/unit_IPM/Digit2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[16]' (FDC) to 'inst/unit_IPM/Digit2_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[17]' (FDC) to 'inst/unit_IPM/Digit2_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[18]' (FDC) to 'inst/unit_IPM/Digit2_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[19]' (FDC) to 'inst/unit_IPM/Digit2_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[20]' (FDC) to 'inst/unit_IPM/Digit2_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[21]' (FDC) to 'inst/unit_IPM/Digit2_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[22]' (FDC) to 'inst/unit_IPM/Digit2_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_IPM/Digit0_reg[23]' (FDC) to 'inst/unit_IPM/Digit2_reg[23]'
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[10]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[9]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[8]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[7]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[6]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[5]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[4]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[3]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[2]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/H_addr_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[9]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[8]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[7]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[6]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[5]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[4]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[3]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[2]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/unit_AdrMng/V_addr_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RAMsel3_reg) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RAMsel2_reg) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RAMsel1_reg) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RAMsel0_reg) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RENd_reg) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress0_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress0_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[23]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[22]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[21]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[20]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[19]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[18]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[17]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[16]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[15]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[14]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[13]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[12]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[11]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[10]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[9]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[8]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[7]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[6]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[5]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[4]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[3]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[2]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD0d_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress1_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress1_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[23]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[22]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[21]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[20]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[19]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[18]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[17]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[16]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[15]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[14]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[13]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[12]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[11]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[10]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[9]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[8]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[7]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[6]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[5]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[4]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[3]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[2]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD1d_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress2_reg[1]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/R_LineAddress2_reg[0]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[23]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[22]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[21]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[20]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[19]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[18]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[17]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[16]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[15]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[14]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[13]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[12]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[11]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[10]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[9]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[8]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[7]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[6]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[5]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/SorterLineBuffer_4lines/RD2d_reg[4]) is unused and will be removed from module zsys_test_LineBufPassThrough_0_1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1171 ; free virtual = 5368
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1042 ; free virtual = 5240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1043 ; free virtual = 5241
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5236
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT1   |    24|
+|3     |LUT2   |     3|
+|4     |LUT3   |    32|
+|5     |LUT4   |     3|
+|6     |LUT5   |    31|
+|7     |LUT6   |    38|
+|8     |FDCE   |    72|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+------------------------+------+
+|      |Instance     |Module                  |Cells |
++------+-------------+------------------------+------+
+|1     |top          |                        |   205|
+|2     |  inst       |test_LineBufPassThrough |   205|
+|3     |    unit_GS  |GrayScale               |    61|
+|4     |    unit_IPM |ImgProcessMux           |   144|
++------+-------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1039 ; free virtual = 5237
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1534.094 ; gain = 102.492 ; free physical = 1096 ; free virtual = 5294
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.094 ; gain = 450.715 ; free physical = 1096 ; free virtual = 5294
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+174 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1550.109 ; gain = 479.312 ; free physical = 1068 ; free virtual = 5266
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_test_LineBufPassThrough_0_1_synth_1/zsys_test_LineBufPassThrough_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_test_LineBufPassThrough_0_1_synth_1/zsys_test_LineBufPassThrough_0_1.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1574.121 ; gain = 0.000 ; free physical = 1069 ; free virtual = 5267
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 26 15:27:41 2019...

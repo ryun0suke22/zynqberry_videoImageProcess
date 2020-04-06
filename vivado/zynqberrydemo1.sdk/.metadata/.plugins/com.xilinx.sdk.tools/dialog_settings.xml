@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="zsys_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="false" key="zsys_wrapper_hw_platform_0-blankCheck"/>
+	<item value="Auto Detect" key="zsys_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="zsys_wrapper_hw_platform_0-target"/>
+	<item value="0" key="zsys_wrapper_hw_platform_0-offSet"/>
+	<item value="" key="zsys_wrapper_hw_platform_0-fsblFile"/>
+	<item value="/home/ryunosuke/Works/zynqberrydemo1/image/BOOT.bin" key="zsys_wrapper_hw_platform_0-imgFile"/>
+	<item value="qspi_single" key="zsys_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="zsys_wrapper_hw_platform_0-verifyFlash"/>
+</section>

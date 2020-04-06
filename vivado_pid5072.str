@@ -1,0 +1,67 @@
+/*
+
+Vivado v2017.1 (64-bit)
+SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+
+Process ID: 5072
+License: Customer
+
+Current time: 	4/6/20 1:24:44 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: NAME="Ubuntu"
+OS Version: 5.0.0-38-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 334 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/bin/java
+Java library paths: /opt/Xilinx/Vivado/2017.1/tps/lnx64/libxslt/lib:/opt/Xilinx/Vivado/2017.1/lib/lnx64.o:/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/lib/amd64:/opt/Xilinx/Vivado/2017.1/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/Vivado/2017.1/lnx64/tools/dot/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+User name: 	ryunosuke
+User home directory: /home/ryunosuke
+User working directory: /home/ryunosuke/Archives/VIVADO/zynqberrydemo1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2017.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2017.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2017.1/bin
+
+User preferences location: /home/ryunosuke/.Xilinx/Vivado
+Vivado preferences directory: /home/ryunosuke/.Xilinx/Vivado/2017.1/vivado.xml
+Vivado layouts directory: /home/ryunosuke/.Xilinx/Vivado/2017.1/layouts
+PlanAhead jar location: 	/opt/Xilinx/Vivado/2017.1/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	./.Xil/Vivado-5072-ryunosuke-dynabook-T552-58HB
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 882 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 48 MB (+47415kb) [00:00:06]
+// [Engine Memory]: 882 MB (+773126kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 892 MB. GUI used memory: 31 MB. Current time: 4/6/20 1:24:46 PM JST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x:h (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [GUI Memory]: 51 MB (+1254kb) [00:02:31]
+// Elapsed time: 21 seconds
+dismissFileChooser();
+// 'i' command handler elapsed time: 21 seconds
+// [GUI Memory]: 55 MB (+1729kb) [00:02:55]
+// [GUI Memory]: 58 MB (+154kb) [00:04:05]

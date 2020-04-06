@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# 
+# Start of session at: Wed Aug 14 19:50:27 2019
+# Process ID: 2867
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/webtalk/webtalk.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

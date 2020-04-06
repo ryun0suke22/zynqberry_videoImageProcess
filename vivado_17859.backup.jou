@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Aug  8 15:26:23 2019
+# Process ID: 17859
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+update_compile_order -fileset sources_1
+remove_files  /home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/test_LineBufPassThrough.v

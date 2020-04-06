@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jul 26 10:29:22 2019
+# Process ID: 3858
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axi_vdma_0_1_synth_1
+# Command line: vivado -log zsys_axi_vdma_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_axi_vdma_0_1.tcl
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axi_vdma_0_1_synth_1/zsys_axi_vdma_0_1.vds
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_axi_vdma_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zsys_axi_vdma_0_1.tcl -notrace

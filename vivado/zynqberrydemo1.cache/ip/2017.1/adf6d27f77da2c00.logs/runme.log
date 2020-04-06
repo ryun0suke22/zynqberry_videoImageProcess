@@ -1,0 +1,63 @@
+
+*** Running vivado
+    with args -log zsys_axis_data_fifo_4_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_axis_data_fifo_4_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_axis_data_fifo_4_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1147.375 ; gain = 64.000 ; free physical = 789 ; free virtual = 4091
+INFO: [Synth 8-638] synthesizing module 'zsys_axis_data_fifo_4_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_data_fifo_4_0/synth/zsys_axis_data_fifo_4_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'axis_data_fifo_v1_1_13_axis_data_fifo' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/a295/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_sync_rst' [/opt/Xilinx/Vivado/2017.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:793]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_sync_rst' (1#1) [/opt/Xilinx/Vivado/2017.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:793]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/acf8/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-256] done synthesizing module 'axis_data_fifo_v1_1_13_axis_data_fifo' (33#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/a295/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'zsys_axis_data_fifo_4_0' (34#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_axis_data_fifo_4_0/synth/zsys_axis_data_fifo_4_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1361.773 ; gain = 278.398 ; free physical = 1169 ; free virtual = 4509
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1361.773 ; gain = 278.398 ; free physical = 1151 ; free virtual = 4491
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1512.371 ; gain = 0.000 ; free physical = 532 ; free virtual = 3872
+Finished Constraint Validation : Time (s): cpu = 00:01:40 ; elapsed = 00:01:44 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 482 ; free virtual = 3828
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:40 ; elapsed = 00:01:44 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 485 ; free virtual = 3832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:01:44 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 508 ; free virtual = 3854
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 887 ; free virtual = 4234
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 846 ; free virtual = 4189
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 1969 ; free virtual = 5315
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 1512.371 ; gain = 428.996 ; free physical = 1903 ; free virtual = 5249
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1857 ; free virtual = 5203
+Finished IO Insertion : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1884 ; free virtual = 5230
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1884 ; free virtual = 5229
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1880 ; free virtual = 5226
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1880 ; free virtual = 5226
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1879 ; free virtual = 5225
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1879 ; free virtual = 5225
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    20|
+|2     |LUT1     |    52|
+|3     |LUT2     |    57|
+|4     |LUT3     |    21|
+|5     |LUT4     |    34|
+|6     |LUT5     |    12|
+|7     |LUT6     |    11|
+|8     |MUXCY    |    24|
+|9     |RAMB36E1 |     4|
+|10    |FDCE     |   123|
+|11    |FDPE     |    21|
+|12    |FDRE     |   130|
+|13    |FDSE     |     6|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:02 . Memory (MB): peak = 1514.387 ; gain = 431.012 ; free physical = 1879 ; free virtual = 5225
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1546.402 ; gain = 475.609 ; free physical = 1628 ; free virtual = 4974

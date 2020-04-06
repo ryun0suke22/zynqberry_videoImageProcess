@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/ryunosuke/Works/zynqberrydemo1/image/zynq_fsbl.elf
+	/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit
+	/home/ryunosuke/Works/zynqberrydemo1/image/u-boot.elf
+}

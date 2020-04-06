@@ -1,0 +1,14 @@
+### log files
+v_log
+.log
+.jou
+
+### backup ###
+.orig
+.bak
+.bk
+.gz
+
+### Personal ###
+workPlace
+

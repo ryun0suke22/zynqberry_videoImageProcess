@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+cp $HOME/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit $HOME/Works/zynqberrydemo1/image/.

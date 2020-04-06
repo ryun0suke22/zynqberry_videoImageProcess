@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Jul 25 09:53:09 2019
+# Process ID: 22909
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/prebuilt/software/vivado.jou
+#-----------------------------------------------------------
+ERROR: [Common 17-356] Failed to install all user apps.
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ryunosuke/Works/zynqberrydemo1/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 6270.379 ; gain = 280.043 ; free physical = 4066 ; free virtual = 7264
+update_compile_order -fileset sources_1
+file copy -force /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.bit
+file mkdir /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk
+write_hwdef -force  -file /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+file copy -force /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/impl_1/zsys_wrapper.sysdef /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+
+launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+ERROR: [Common 17-70] Application Exception: Not found in path: xsdk
+launch_sdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk -hwspec /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.sdk/zsys_wrapper.hdf
+ERROR: [Common 17-70] Application Exception: Not found in path: xsdk
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 10:52:21 2019...

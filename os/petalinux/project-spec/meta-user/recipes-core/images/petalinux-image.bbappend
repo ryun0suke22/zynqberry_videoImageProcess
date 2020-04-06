@@ -1,0 +1,5 @@
+IMAGE_INSTALL_append = " peekpoke"
+IMAGE_INSTALL_append = " gpio-demo"
+IMAGE_INSTALL_append = " rpicam"
+IMAGE_INSTALL_append = " startup"
+IMAGE_INSTALL_append = " te-audio-codec"

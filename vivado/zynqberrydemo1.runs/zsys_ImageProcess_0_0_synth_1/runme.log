@@ -1,0 +1,780 @@
+
+*** Running vivado
+    with args -log zsys_ImageProcess_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_ImageProcess_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_ImageProcess_0_0.tcl -notrace
+Command: synth_design -top zsys_ImageProcess_0_0 -part xc7z010clg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25618 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1144.371 ; gain = 60.992 ; free physical = 1432 ; free virtual = 4777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zsys_ImageProcess_0_0' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_ImageProcess_0_0/synth/zsys_ImageProcess_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'ImageProcess' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/ImageProcess.v:2]
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'AddrManager' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/AddrManager.v:1]
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+	Parameter EndLineH bound to: 1280 - type: integer 
+	Parameter Hsync_back bound to: 220 - type: integer 
+	Parameter output_gap bound to: 10 - type: integer 
+	Parameter filter_size bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AddrManager' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/AddrManager.v:1]
+INFO: [Synth 8-638] synthesizing module 'LineBuffer_4lines' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:1]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter XADRSWidth bound to: 11 - type: integer 
+	Parameter YADRSWidth bound to: 10 - type: integer 
+	Parameter ADRSWidth bound to: 21 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'LineAddress' should be on the sensitivity list [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:26]
+INFO: [Synth 8-638] synthesizing module 'lineBufBlock' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/lineBufBlock.v:2]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter ADRSWidth bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lineBufBlock' (2#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/lineBufBlock.v:2]
+INFO: [Synth 8-256] done synthesizing module 'LineBuffer_4lines' (3#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:1]
+INFO: [Synth 8-638] synthesizing module 'Timer_mod' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:2]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+	Parameter State4 bound to: 4 - type: integer 
+	Parameter oneSec bound to: 74000000 - type: integer 
+	Parameter pointOneSec bound to: 7400000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Timer_mod' (4#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:2]
+INFO: [Synth 8-638] synthesizing module 'Mux' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/MUX.v:7]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (5#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/MUX.v:7]
+INFO: [Synth 8-638] synthesizing module 'negPosInv' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/negPosInv.v:7]
+INFO: [Synth 8-256] done synthesizing module 'negPosInv' (6#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/negPosInv.v:7]
+INFO: [Synth 8-638] synthesizing module 'unsharp' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:3]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:59]
+INFO: [Synth 8-256] done synthesizing module 'unsharp' (7#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:3]
+INFO: [Synth 8-638] synthesizing module 'sobel' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:3]
+WARNING: [Synth 8-6014] Unused sequential element gray11_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:28]
+INFO: [Synth 8-256] done synthesizing module 'sobel' (8#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:3]
+INFO: [Synth 8-638] synthesizing module 'embos' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:3]
+WARNING: [Synth 8-6014] Unused sequential element gray01_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:25]
+WARNING: [Synth 8-6014] Unused sequential element gray02_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:25]
+WARNING: [Synth 8-6014] Unused sequential element gray10_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:26]
+WARNING: [Synth 8-6014] Unused sequential element gray12_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:26]
+WARNING: [Synth 8-6014] Unused sequential element gray20_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:27]
+WARNING: [Synth 8-6014] Unused sequential element gray21_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:27]
+WARNING: [Synth 8-6014] Unused sequential element gray22_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:27]
+INFO: [Synth 8-256] done synthesizing module 'embos' (9#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/embos.v:3]
+INFO: [Synth 8-638] synthesizing module 'laplacian' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/laplacian.v:3]
+INFO: [Synth 8-256] done synthesizing module 'laplacian' (10#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/laplacian.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ImageProcess' (11#1) [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/ImageProcess.v:2]
+INFO: [Synth 8-256] done synthesizing module 'zsys_ImageProcess_0_0' (12#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_ImageProcess_0_0/synth/zsys_ImageProcess_0_0.v:56]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[23]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[22]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[21]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[20]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[19]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[18]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[17]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[16]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[15]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[14]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[13]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[12]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[11]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[10]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[9]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[8]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[7]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[6]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[5]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[4]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[3]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[2]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[1]
+WARNING: [Synth 8-3331] design embos has unconnected port D02IN[0]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[23]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[22]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[21]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[20]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[19]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[18]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[17]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[16]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[15]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[14]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[13]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[12]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[11]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[10]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[9]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[8]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[7]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[6]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[5]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[4]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[3]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[2]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[1]
+WARNING: [Synth 8-3331] design embos has unconnected port D01IN[0]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[23]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[22]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[21]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[20]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[19]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[18]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[17]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[16]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[15]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[14]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[13]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[12]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[11]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[10]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[9]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[8]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[7]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[6]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[5]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[4]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[3]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[2]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[1]
+WARNING: [Synth 8-3331] design embos has unconnected port D12IN[0]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[23]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[22]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[21]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[20]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[19]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[18]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[17]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[16]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[15]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[14]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[13]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[12]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[11]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[10]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[9]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[8]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[7]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[6]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[5]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[4]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[3]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[2]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[1]
+WARNING: [Synth 8-3331] design embos has unconnected port D10IN[0]
+WARNING: [Synth 8-3331] design embos has unconnected port D22IN[23]
+WARNING: [Synth 8-3331] design embos has unconnected port D22IN[22]
+WARNING: [Synth 8-3331] design embos has unconnected port D22IN[21]
+WARNING: [Synth 8-3331] design embos has unconnected port D22IN[20]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1185.871 ; gain = 102.492 ; free physical = 1439 ; free virtual = 4784
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1185.871 ; gain = 102.492 ; free physical = 1441 ; free virtual = 4786
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1540.070 ; gain = 2.000 ; free physical = 1210 ; free virtual = 4556
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1285 ; free virtual = 4631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1285 ; free virtual = 4631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1286 ; free virtual = 4632
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "V_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element V_addr_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/AddrManager.v:17]
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Timer_mod'
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:22]
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "State" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "State" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "State" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "State" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "State" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element red_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:78]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:78]
+WARNING: [Synth 8-6014] Unused sequential element green_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:78]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:48]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:33]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:32]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:31]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:36]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:34]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:39]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:38]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/sobel.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel3_reg' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel2_reg' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel1_reg' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'RAMsel0_reg' [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/LineBuffer_4lines.v:29]
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:22]
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:22]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'Timer_mod'
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/Timer.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1276 ; free virtual = 4622
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   7 Input     16 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	  10 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 11    
+	   3 Input      8 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               33 Bit    Registers := 3     
+	               30 Bit    Registers := 1     
+	               24 Bit    Registers := 25    
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 14    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 8x33  Multipliers := 3     
++---RAMs : 
+	              30K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 3     
+	   9 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	  11 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AddrManager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module lineBufBlock 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---RAMs : 
+	              30K Bit         RAMs := 1     
+Module LineBuffer_4lines 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module Timer_mod 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 5     
+Module unsharp 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                 8x33  Multipliers := 3     
+Module sobel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   7 Input     16 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 8     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
++---Muxes : 
+	   9 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module embos 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+Module laplacian 
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input     11 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 9     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 10    
++---Muxes : 
+	  11 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+Module ImageProcess 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "V_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element V_addr_reg was removed.  [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/AddrManager.v:17]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:89]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:85]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ryunosuke/Works/zynqberrydemo1/ZynqCamera/sources/unsharp.v:81]
+DSP Report: Generating DSP green8, operation Mode is: A*B.
+DSP Report: operator green8 is absorbed into DSP green8.
+DSP Report: operator green8 is absorbed into DSP green8.
+DSP Report: Generating DSP green8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator green8 is absorbed into DSP green8.
+DSP Report: operator green8 is absorbed into DSP green8.
+DSP Report: Generating DSP blue8, operation Mode is: A*B.
+DSP Report: operator blue8 is absorbed into DSP blue8.
+DSP Report: operator blue8 is absorbed into DSP blue8.
+DSP Report: Generating DSP blue8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blue8 is absorbed into DSP blue8.
+DSP Report: operator blue8 is absorbed into DSP blue8.
+DSP Report: Generating DSP red8, operation Mode is: A*B.
+DSP Report: operator red8 is absorbed into DSP red8.
+DSP Report: operator red8 is absorbed into DSP red8.
+DSP Report: Generating DSP red8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator red8 is absorbed into DSP red8.
+DSP Report: operator red8 is absorbed into DSP red8.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LineBuffer0/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LineBuffer1/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LineBuffer2/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LineBuffer3/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'inst/SorterLineBuffer_4lines/R_LineAddress2_reg[0]' (FDR) to 'inst/SorterLineBuffer_4lines/R_LineAddress0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_unSharp/k_reg[3]' (FDRE) to 'inst/unit_unSharp/k_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_unSharp/k_reg[4]' (FDRE) to 'inst/unit_unSharp/k_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/unit_unSharp/\k_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/unit_unSharp/k_reg[1]' (FDRE) to 'inst/unit_unSharp/k_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unit_unSharp/\k_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_x_reg[11]' (FDR) to 'inst/unit_sobel/tmp_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_x_reg[12]' (FDR) to 'inst/unit_sobel/tmp_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_x_reg[13]' (FDR) to 'inst/unit_sobel/tmp_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_x_reg[15]' (FDR) to 'inst/unit_sobel/tmp_x_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_y_reg[11]' (FDR) to 'inst/unit_sobel/tmp_y_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_y_reg[12]' (FDR) to 'inst/unit_sobel/tmp_y_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_y_reg[13]' (FDR) to 'inst/unit_sobel/tmp_y_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/tmp_y_reg[15]' (FDR) to 'inst/unit_sobel/tmp_y_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray11_reg[10]' (FDR) to 'inst/unit_Laplacian/gray00_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray11_reg[9]' (FDR) to 'inst/unit_Laplacian/gray00_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray00_reg[9]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray22_reg[9]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray00_reg[10]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray22_reg[10]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray21_reg[9]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray12_reg[9]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray20_reg[9]' (FDR) to 'inst/unit_Laplacian/gray21_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray21_reg[10]' (FDR) to 'inst/unit_Laplacian/gray12_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray20_reg[10]' (FDR) to 'inst/unit_Laplacian/gray12_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray12_reg[10]' (FDR) to 'inst/unit_Laplacian/gray02_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray10_reg[9]' (FDR) to 'inst/unit_Laplacian/gray02_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray01_reg[9]' (FDR) to 'inst/unit_Laplacian/gray02_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray02_reg[9]' (FDR) to 'inst/unit_Laplacian/gray02_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray10_reg[10]' (FDR) to 'inst/unit_Laplacian/gray02_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/gray02_reg[10]' (FDR) to 'inst/unit_Laplacian/gray01_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unit_Laplacian/\gray01_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/gray11_reg[9]' (FDR) to 'inst/unit_embos/gray11_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/gray00_reg[9]' (FDR) to 'inst/unit_embos/gray11_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/gray00_reg[10]' (FDR) to 'inst/unit_embos/gray11_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unit_embos/\gray11_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[0]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[0]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[0]' (FDR) to 'inst/unit_embos/Dout_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[1]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[1]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[1]' (FDR) to 'inst/unit_embos/Dout_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[2]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[2]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[2]' (FDR) to 'inst/unit_embos/Dout_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[3]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[3]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[3]' (FDR) to 'inst/unit_embos/Dout_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[4]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[4]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[4]' (FDR) to 'inst/unit_embos/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[5]' (FDR) to 'inst/unit_Laplacian/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[5]' (FDR) to 'inst/unit_sobel/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[5]' (FDR) to 'inst/unit_embos/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[6]' (FDR) to 'inst/unit_Laplacian/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[6]' (FDR) to 'inst/unit_sobel/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[6]' (FDR) to 'inst/unit_embos/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[7]' (FDR) to 'inst/unit_Laplacian/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[7]' (FDR) to 'inst/unit_sobel/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[7]' (FDR) to 'inst/unit_embos/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[8]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[8]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[8]' (FDR) to 'inst/unit_embos/Dout_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[9]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[9]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[9]' (FDR) to 'inst/unit_embos/Dout_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[10]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[10]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[10]' (FDR) to 'inst/unit_embos/Dout_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[11]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[11]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[11]' (FDR) to 'inst/unit_embos/Dout_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[12]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[12]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[12]' (FDR) to 'inst/unit_embos/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[13]' (FDR) to 'inst/unit_Laplacian/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[13]' (FDR) to 'inst/unit_sobel/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[13]' (FDR) to 'inst/unit_embos/Dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[14]' (FDR) to 'inst/unit_Laplacian/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[14]' (FDR) to 'inst/unit_sobel/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[14]' (FDR) to 'inst/unit_embos/Dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[15]' (FDR) to 'inst/unit_Laplacian/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[15]' (FDR) to 'inst/unit_sobel/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_embos/Dout_reg[15]' (FDR) to 'inst/unit_embos/Dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[16]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[16]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[17]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[17]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[18]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[18]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_Laplacian/Dout_reg[19]' (FDR) to 'inst/unit_Laplacian/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/unit_sobel/Dout_reg[19]' (FDR) to 'inst/unit_sobel/Dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit2_reg[0]' (FDR) to 'inst/u_Mux/Digit2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit1_reg[0]' (FDR) to 'inst/u_Mux/Digit1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit4_reg[0]' (FDR) to 'inst/u_Mux/Digit4_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit2_reg[1]' (FDR) to 'inst/u_Mux/Digit2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit1_reg[1]' (FDR) to 'inst/u_Mux/Digit1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit4_reg[1]' (FDR) to 'inst/u_Mux/Digit4_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit2_reg[2]' (FDR) to 'inst/u_Mux/Digit2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit1_reg[2]' (FDR) to 'inst/u_Mux/Digit1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit4_reg[2]' (FDR) to 'inst/u_Mux/Digit4_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit2_reg[3]' (FDR) to 'inst/u_Mux/Digit2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit1_reg[3]' (FDR) to 'inst/u_Mux/Digit1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Mux/Digit4_reg[3]' (FDR) to 'inst/u_Mux/Digit4_reg[11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (k_reg[2]) is unused and will be removed from module unsharp.
+WARNING: [Synth 8-3332] Sequential element (k_reg[0]) is unused and will be removed from module unsharp.
+WARNING: [Synth 8-3332] Sequential element (gray11_reg[10]) is unused and will be removed from module embos.
+WARNING: [Synth 8-3332] Sequential element (gray11_reg[8]) is unused and will be removed from module laplacian.
+WARNING: [Synth 8-3332] Sequential element (gray01_reg[10]) is unused and will be removed from module laplacian.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1241 ; free virtual = 4587
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|lineBufBlock: | ram_reg    | 2 K x 24               | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|lineBufBlock: | ram_reg    | 2 K x 24               | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|lineBufBlock: | ram_reg    | 2 K x 24               | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|lineBufBlock: | ram_reg    | 2 K x 24               | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|unsharp     | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unsharp     | (PCIN>>17)+A*B | 17     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unsharp     | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unsharp     | (PCIN>>17)+A*B | 17     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unsharp     | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unsharp     | (PCIN>>17)+A*B | 17     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1086 ; free virtual = 4432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1540.070 ; gain = 456.691 ; free physical = 1084 ; free virtual = 4430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer0/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer0/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer1/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer1/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer2/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer2/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer3/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/SorterLineBuffer_4lines/LineBuffer3/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1075 ; free virtual = 4421
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1074 ; free virtual = 4420
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1074 ; free virtual = 4420
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1074 ; free virtual = 4419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1073 ; free virtual = 4419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1073 ; free virtual = 4419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1073 ; free virtual = 4419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   420|
+|2     |DSP48E1_1 |     6|
+|3     |LUT1      |   686|
+|4     |LUT2      |   215|
+|5     |LUT3      |   509|
+|6     |LUT4      |   499|
+|7     |LUT5      |   119|
+|8     |LUT6      |   292|
+|9     |RAMB18E1  |     4|
+|10    |RAMB36E1  |     4|
+|11    |FDRE      |   832|
+|12    |LDC       |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------+------------------+------+
+|      |Instance                    |Module            |Cells |
++------+----------------------------+------------------+------+
+|1     |top                         |                  |  3590|
+|2     |  inst                      |ImageProcess      |  2570|
+|3     |    SorterLineBuffer_4lines |LineBuffer_4lines |   163|
+|4     |      LineBuffer0           |lineBufBlock      |     2|
+|5     |      LineBuffer1           |lineBufBlock_0    |    74|
+|6     |      LineBuffer2           |lineBufBlock_1    |     2|
+|7     |      LineBuffer3           |lineBufBlock_2    |     2|
+|8     |    u_Mux                   |Mux               |   102|
+|9     |    u_TM                    |Timer_mod         |   133|
+|10    |    unit_AdrMng             |AddrManager       |    63|
+|11    |    unit_Laplacian          |laplacian         |   464|
+|12    |    unit_embos              |embos             |   125|
+|13    |    unit_sobel              |sobel             |   454|
+|14    |    unit_unSharp            |unsharp           |   442|
++------+----------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1664.953 ; gain = 581.574 ; free physical = 1073 ; free virtual = 4419
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 260 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1664.953 ; gain = 227.375 ; free physical = 1137 ; free virtual = 4483
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1664.961 ; gain = 581.574 ; free physical = 1136 ; free virtual = 4482
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 438 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LDC => LDCE: 4 instances
+
+176 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1696.969 ; gain = 626.172 ; free physical = 1117 ; free virtual = 4463
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_ImageProcess_0_0_synth_1/zsys_ImageProcess_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_ImageProcess_0_0_synth_1/zsys_ImageProcess_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1720.980 ; gain = 0.000 ; free physical = 1116 ; free virtual = 4465
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 15 20:47:34 2019...

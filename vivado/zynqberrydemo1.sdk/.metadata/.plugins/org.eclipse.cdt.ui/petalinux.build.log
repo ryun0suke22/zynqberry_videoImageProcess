@@ -1,0 +1,6 @@
+00:27:40 **** Incremental Build of configuration Debug for project petalinux ****
+make all 
+make: Nothing to be done for 'all'.
+
+00:27:41 Build Finished (took 478ms)
+

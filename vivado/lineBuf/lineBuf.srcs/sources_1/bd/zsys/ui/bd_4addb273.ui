@@ -1,0 +1,204 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 740 -defaultsOSRD
+preplace port Vp_Vn -pg 1 -y 810 -defaultsOSRD
+preplace port PWM_R -pg 1 -y 1090 -defaultsOSRD
+preplace port GPIO_1 -pg 1 -y 720 -defaultsOSRD
+preplace port csi_c_clk_n -pg 1 -y 1400 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 760 -defaultsOSRD
+preplace port hdmi_clk_n -pg 1 -y 550 -defaultsOSRD
+preplace port csi_c_clk_p -pg 1 -y 1420 -defaultsOSRD
+preplace port PWM_L -pg 1 -y 1070 -defaultsOSRD
+preplace port hdmi_clk_p -pg 1 -y 570 -defaultsOSRD
+preplace portBus csi_d_lp_p -pg 1 -y 1460 -defaultsOSRD
+preplace portBus csi_d_n -pg 1 -y 1480 -defaultsOSRD
+preplace portBus hdmi_data_n -pg 1 -y 590 -defaultsOSRD
+preplace portBus csi_d_p -pg 1 -y 1500 -defaultsOSRD
+preplace portBus hdmi_data_p -pg 1 -y 610 -defaultsOSRD
+preplace portBus csi_d_lp_n -pg 1 -y 1440 -defaultsOSRD
+preplace inst video_out|axis_fb_conv_0 -pg 1 -lvl 2 -y -30 -defaultsOSRD
+preplace inst video_out|axi_mem_intercon -pg 1 -lvl 3 -y -90 -defaultsOSRD
+preplace inst video_in|axis_data_fifo_3 -pg 1 -lvl 5 -y 1670 -defaultsOSRD
+preplace inst video_in|axi_interconnect_0 -pg 1 -lvl 9 -y 1750 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|s00_couplers -pg 1 -lvl 1 -y 792 -defaultsOSRD
+preplace inst video_in -pg 1 -lvl 3 -y 1490 -defaultsOSRD
+preplace inst video_out|test_LineBufPassThrough_0 -pg 1 -lvl 3 -y -380 -defaultsOSRD
+preplace inst video_out|clk_wiz_1 -pg 1 -lvl 1 -y -340 -defaultsOSRD
+preplace inst video_in|axis_data_fifo_4 -pg 1 -lvl 7 -y 1710 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m00_couplers -pg 1 -lvl 3 -y 502 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 2214 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m02_couplers -pg 1 -lvl 3 -y 842 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|xbar -pg 1 -lvl 2 -y 812 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -y 2014 -defaultsOSRD
+preplace inst video_out|axi_vdma_0 -pg 1 -lvl 1 -y -150 -defaultsOSRD
+preplace inst audio -pg 1 -lvl 3 -y 820 -defaultsOSRD
+preplace inst video_in|proc_sys_reset_0 -pg 1 -lvl 1 -y 1970 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m04_couplers -pg 1 -lvl 3 -y 1182 -defaultsOSRD
+preplace inst video_in|proc_sys_reset_1 -pg 1 -lvl 2 -y 1890 -defaultsOSRD
+preplace inst video_in|csi_to_axis_0 -pg 1 -lvl 2 -y 1680 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m03_couplers -pg 1 -lvl 3 -y 1012 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 982 -defaultsOSRD
+preplace inst video_out|Video_IO_2_HDMI_TMDS_0 -pg 1 -lvl 4 -y -380 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m05_couplers -pg 1 -lvl 3 -y 1352 -defaultsOSRD
+preplace inst video_in|csi2_d_phy_rx_0 -pg 1 -lvl 1 -y 1440 -defaultsOSRD
+preplace inst resets|rst_processing_system7_0_50M -pg 1 -lvl 1 -y 942 -defaultsOSRD
+preplace inst video_out|v_tc_0 -pg 1 -lvl 2 -y -710 -defaultsOSRD
+preplace inst video_in|axis_raw_unpack_0 -pg 1 -lvl 4 -y 1650 -defaultsOSRD
+preplace inst video_in|axis_data_fifo_0 -pg 1 -lvl 3 -y 1710 -defaultsOSRD
+preplace inst video_in|axi_vdma_0 -pg 1 -lvl 8 -y 1710 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph|m01_couplers -pg 1 -lvl 3 -y 672 -defaultsOSRD
+preplace inst resets -pg 1 -lvl 1 -y 892 -defaultsOSRD
+preplace inst video_out|v_axi4s_vid_out_0 -pg 1 -lvl 2 -y -380 -defaultsOSRD
+preplace inst video_in|axis_raw_demosaic_0 -pg 1 -lvl 6 -y 1670 -defaultsOSRD
+preplace inst video_out -pg 1 -lvl 3 -y -520 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 592 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -y 870 -defaultsOSRD
+preplace inst axi_reg32_0 -pg 1 -lvl 3 -y 1140 -defaultsOSRD
+preplace netloc video_out|test_LineBufPassThrough_0_o_VDE 1 3 1 3570
+preplace netloc video_in|ref_clk_in_1 1 0 1 2270
+preplace netloc video_in|csi_clk_p_1 1 0 1 2250
+preplace netloc video_out_M00_AXI 1 3 1 5630
+preplace netloc audio_DMA_RX_REQ 1 3 1 5600
+preplace netloc video_out|Conn1 1 3 2 3580J -600 N
+preplace netloc video_out|axi_vdma_0_M_AXIS_MM2S 1 1 1 2640
+preplace netloc processing_system7_0_axi_periph|processing_system7_0_axi_periph_ARESETN_net 1 0 3 870 882 1130 912 1490
+preplace netloc processing_system7_0_axi_periph|xbar_to_m01_couplers 1 2 1 1520
+preplace netloc csi_d_lp_n_1 1 0 3 NJ 1440 620J 1500 1980J
+preplace netloc video_out|Conn2 1 0 1 2230
+preplace netloc video_in|csi_data_lp_p_1 1 0 1 2310
+preplace netloc video_in|axi_int_aresetn_1 1 0 9 2240J 1580 2700J 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1530 5110
+preplace netloc video_in_M00_AXI 1 3 1 5610
+preplace netloc csi_c_clk_p_1 1 0 3 NJ 1420 630J 1490 1970J
+preplace netloc video_out|Conn3 1 0 2 2220J -790 N
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ
+preplace netloc processing_system7_0_axi_periph|s00_couplers_to_xbar 1 1 1 N
+preplace netloc video_out|test_LineBufPassThrough_0_o_pixelData 1 3 1 N
+preplace netloc video_in|csi_data_p_1 1 0 1 2290
+preplace netloc processing_system7_0_axi_periph|M02_ACLK_1 1 0 3 880J 662 NJ 662 1530
+preplace netloc processing_system7_0_axi_periph|M02_ARESETN_1 1 0 3 890J 672 NJ 672 1470
+preplace netloc video_out|axi_vdma_0_M_AXI_MM2S 1 1 2 2640J -170 3070
+preplace netloc video_in|axis_data_fifo_4_M_AXIS 1 7 1 N
+preplace netloc processing_system7_0_axi_periph|xbar_to_m05_couplers 1 2 1 1440
+preplace netloc processing_system7_0_axi_periph|m02_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc video_in|colors_mode_1 1 0 6 2230J 1590 NJ 1590 3120J 1550 NJ 1550 NJ 1550 4090
+preplace netloc video_in|axi_vdma_0_s2mm_introut 1 8 2 5090 1870 NJ
+preplace netloc processing_system7_0_axi_periph|m04_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc csi_d_lp_p_1 1 0 3 NJ 1460 610J 1510 NJ
+preplace netloc video_out|v_axi4s_vid_out_0_vid_active_video 1 2 1 3110
+preplace netloc video_out|clk_wiz_1_clk_out2 1 1 3 2640J -210 NJ -210 3600
+preplace netloc processing_system7_0_axi_periph|xbar_to_m04_couplers 1 2 1 1450
+preplace netloc video_out_mm2s_introut 1 2 2 2010 -870 5590
+preplace netloc audio_pwm_l_out 1 3 2 5600J 1070 NJ
+preplace netloc video_out|Video_IO_2_HDMI_TMDS_0_hdmi_data_n 1 4 1 3940
+preplace netloc processing_system7_0_axi_periph|xbar_to_m03_couplers 1 2 1 1460
+preplace netloc xlconcat_0_dout 1 3 1 5620
+preplace netloc video_in_rx_dma_int 1 2 2 2040 1040 5580
+preplace netloc video_out|clk_wiz_1_locked 1 1 3 2680J -200 3100J -230 3610
+preplace netloc video_in|axis_data_fifo_3_M_AXIS 1 5 1 N
+preplace netloc video_in|m_axis_aresetn_1 1 0 9 2260J 1610 2740J 1570 NJ 1570 NJ 1570 NJ 1570 NJ 1570 4350 1810 4720 1820 5110
+preplace netloc processing_system7_0_GPIO_0 1 4 1 NJ
+preplace netloc video_out|Video_IO_2_HDMI_TMDS_0_hdmi_data_p 1 4 1 3950
+preplace netloc video_in|csi_clk_n_1 1 0 1 N
+preplace netloc video_out|test_LineBufPassThrough_0_o_VSync 1 3 1 3550
+preplace netloc video_out|v_axi4s_vid_out_0_vtg_ce 1 1 2 2700 -180 3070
+preplace netloc video_out|test_LineBufPassThrough_0_o_HBlank 1 3 1 3560
+preplace netloc video_in|csi2_d_phy_rx_0_RX_MIPI_PPI 1 1 1 2730
+preplace netloc video_in|proc_sys_reset_1_peripheral_aresetn 1 2 5 3110 1620 3490 1580 3740 1590 4110 1590 4360
+preplace netloc processing_system7_0_axi_periph|xbar_to_m00_couplers 1 2 1 1460
+preplace netloc csi_d_n_1 1 0 3 NJ 1480 600J 1530 NJ
+preplace netloc processing_system7_0_DDR 1 4 1 NJ
+preplace netloc audio_pwm_r_out 1 3 2 5590J 1090 NJ
+preplace netloc resets|ext_reset_in_1 1 0 1 N
+preplace netloc video_in|processing_clk_1 1 0 7 NJ 1850 2740 1800 3140 1800 3500 1720 3740 1750 4100 1750 4360J
+preplace netloc processing_system7_0_axi_periph|M05_ACLK_1 1 0 3 NJ 1332 NJ 1332 N
+preplace netloc processing_system7_0_axi_periph|processing_system7_0_axi_periph_ACLK_net 1 0 3 900 692 1130 692 1480
+preplace netloc axi_reg32_0_WR0 1 1 3 690 2100 NJ 2100 5570
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 1880
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 2 610 340 1960
+preplace netloc video_out|v_tc_0_vtiming_out 1 1 2 2720 -580 3110
+preplace netloc csi_d_p_1 1 0 3 NJ 1500 590J 1550 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 -110 1830 NJ 1830 1880 2090 NJ 2090 6140
+preplace netloc xlslice_1_Dout 1 2 1 1960J
+preplace netloc csi_c_clk_n_1 1 0 3 NJ 1400 640J 1480 1950J
+preplace netloc video_out|aresetn_1 1 0 3 2250 -240 2670 -160 3090
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 1900
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 1930
+preplace netloc video_out|aclk_1 1 0 3 2240 -250 2660 -130 3080
+preplace netloc processing_system7_0_axi_periph|M03_ACLK_1 1 0 3 NJ 992 NJ 992 N
+preplace netloc video_in|csi_data_lp_n_1 1 0 1 2280
+preplace netloc video_in|CSI_AXIS_RSTN 1 1 2 2730 1780 3120J
+preplace netloc xlslice_0_Dout 1 2 1 1980J
+preplace netloc video_out|v_axi4s_vid_out_0_vid_hblank 1 2 1 3070
+preplace netloc video_in|axi_vdma_0_M_AXI_S2MM 1 8 1 N
+preplace netloc processing_system7_0_axi_periph|M04_ARESETN_1 1 0 3 NJ 1182 NJ 1182 N
+preplace netloc video_out_hdmi_data_n 1 3 2 NJ -310 6120J
+preplace netloc processing_system7_0_axi_periph|xbar_to_m02_couplers 1 2 1 N
+preplace netloc video_in|s_axis_aclk_1 1 0 3 2330 1770 2710 1770 3130
+preplace netloc video_in|csi_data_n_1 1 0 1 2300
+preplace netloc processing_system7_0_axi_periph|m03_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc processing_system7_0_axi_periph|S00_ACLK_1 1 0 1 850
+preplace netloc processing_system7_0_DMA1_ACK 1 2 3 2000 1230 NJ 1230 6150
+preplace netloc video_out_hdmi_data_p 1 3 2 NJ -290 6110J
+preplace netloc Vp_Vn_1 1 0 3 NJ 810 650J 1470 1920J
+preplace netloc video_out|axi_vdma_0_mm2s_introut 1 1 4 NJ -120 3110 -240 NJ -240 3960
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 1910
+preplace netloc processing_system7_0_axi_periph|m00_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc processing_system7_0_axi_periph|m01_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc video_in|csi_to_axis_0_data_err 1 0 3 2330 1560 NJ 1560 3100
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -120 1060 660 330 1940 1050 5630 1080 6110
+preplace netloc processing_system7_0_DMA0_ACK 1 2 3 2030 1220 NJ 1220 6160
+preplace netloc video_out|v_axi4s_vid_out_0_vid_hsync 1 2 1 3080
+preplace netloc video_in|Conn2 1 2 1 N
+preplace netloc video_in|m_axi_aclk 1 0 9 2320J 1600 2720J 1550 3110J 1560 NJ 1560 NJ 1560 NJ 1560 4370 1800 4730 1810 5100
+preplace netloc video_in|ext_reset_in_1 1 0 2 2310 1870 N
+preplace netloc processing_system7_0_axi_periph|M00_ACLK_1 1 0 3 860J 482 NJ 482 N
+preplace netloc video_in|Conn3 1 0 8 NJ 1570 2690J 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 4730
+preplace netloc processing_system7_0_FCLK_CLK2 1 2 3 1990 1240 NJ 1240 6130
+preplace netloc video_in|Conn4 1 9 1 N
+preplace netloc video_in|axis_raw_demosaic_0_M_AXIS 1 6 1 N
+preplace netloc processing_system7_0_axi_periph|M01_ACLK_1 1 0 3 NJ 632 NJ 632 1510
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 1870
+preplace netloc processing_system7_0_FCLK_CLK3 1 2 3 2020 1250 NJ 1250 6120
+preplace netloc video_in|axis_data_fifo_0_M_AXIS 1 3 1 3480
+preplace netloc video_in|ENABLE_STREAM 1 0 2 NJ 1660 N
+preplace netloc resets|slowest_sync_clk_1 1 0 1 N
+preplace netloc resets|rst_processing_system7_0_50M_interconnect_aresetn 1 1 1 N
+preplace netloc processing_system7_0_axi_periph|S00_ARESETN_1 1 0 1 840
+preplace netloc video_out|axis_fb_conv_0_video_out 1 1 2 2710 -100 3070
+preplace netloc video_out|Video_IO_2_HDMI_TMDS_0_hdmi_clk_n 1 4 1 N
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 2 670 350 1970
+preplace netloc processing_system7_0_axi_periph|M01_ARESETN_1 1 0 3 NJ 652 NJ 652 1500
+preplace netloc video_out|test_LineBufPassThrough_0_o_VBlank 1 3 1 3540
+preplace netloc video_out|ARESETN_2 1 0 3 NJ -260 2650J -110 N
+preplace netloc video_out|CLKWIZ_AXI_1 1 0 1 2240
+preplace netloc video_out|Video_IO_2_HDMI_TMDS_0_hdmi_clk_p 1 4 1 3930
+preplace netloc video_out|clk_in1_1 1 0 1 2260
+preplace netloc video_in|axis_raw_unpack_0_M_AXIS 1 4 1 N
+preplace netloc processing_system7_0_axi_periph|M03_ARESETN_1 1 0 3 NJ 1012 NJ 1012 N
+preplace netloc processing_system7_0_axi_periph|processing_system7_0_axi_periph_to_s00_couplers 1 0 1 910
+preplace netloc video_out_hdmi_clk_n 1 3 2 NJ -350 6170J
+preplace netloc video_out|v_axi4s_vid_out_0_vid_vsync 1 2 1 3090
+preplace netloc video_out|v_axi4s_vid_out_0_vid_data 1 2 1 3070
+preplace netloc audio_DMA_TX_REQ 1 3 1 5590
+preplace netloc resets|rst_processing_system7_0_50M_peripheral_aresetn 1 1 1 N
+preplace netloc processing_system7_0_axi_periph|M04_ACLK_1 1 0 3 NJ 1162 NJ 1162 N
+preplace netloc video_out_hdmi_clk_p 1 3 2 NJ -330 6160J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 680 2080 NJ 2080 NJ 2080 6170
+preplace netloc video_out|test_LineBufPassThrough_0_o_HSync 1 3 1 N
+preplace netloc video_out|v_axi4s_vid_out_0_vid_vblank 1 2 1 3100
+preplace netloc processing_system7_0_axi_periph|m05_couplers_to_processing_system7_0_axi_periph 1 3 1 N
+preplace netloc processing_system7_0_axi_periph|M05_ARESETN_1 1 0 3 NJ 1352 NJ 1352 N
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 1890
+preplace netloc video_out|video_clk_in_1 1 1 3 2690 -190 3080 -250 3590
+preplace netloc processing_system7_0_axi_periph|M00_ARESETN_1 1 0 3 880J 502 NJ 502 N
+levelinfo -pg 1 -140 160 960 2330 5880 6190 -top -910 -bot 2270
+levelinfo -hier processing_system7_0_axi_periph * 1020 1300 1640 *
+levelinfo -hier resets * 250 *
+levelinfo -hier video_in * 2510 2920 3310 3620 3920 4230 4550 4910 5270 *
+levelinfo -hier video_out * 2450 2910 3350 3770 *
+",
+}
+{
+   da_ps7_cnt: "1",
+}

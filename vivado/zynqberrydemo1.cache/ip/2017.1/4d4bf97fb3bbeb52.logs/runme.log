@@ -1,0 +1,82 @@
+
+*** Running vivado
+    with args -log zsys_auto_pc_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zsys_auto_pc_1.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zsys_auto_pc_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1148.371 ; gain = 65.000 ; free physical = 222 ; free virtual = 4757
+INFO: [Synth 8-638] synthesizing module 'zsys_auto_pc_1' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_1/synth/zsys_auto_pc_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_axi_protocol_converter' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_axi3_conv' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_b_downsizer' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2276]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_b_downsizer' (1#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2276]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_a_axi3_conv' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_fifo_gen' (20#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_11_axic_fifo' (21#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/5235/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_a_axi3_conv' (22#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_12_w_axi3_conv' [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2004]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_w_axi3_conv' (23#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2004]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_axi3_conv' (24#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_12_axi_protocol_converter' (25#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ipshared/138d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-256] done synthesizing module 'zsys_auto_pc_1' (26#1) [/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_1/synth/zsys_auto_pc_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1269.871 ; gain = 186.500 ; free physical = 2692 ; free virtual = 5569
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1269.871 ; gain = 186.500 ; free physical = 2721 ; free virtual = 5598
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1553.477 ; gain = 0.000 ; free physical = 1466 ; free virtual = 4421
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 927 ; free virtual = 3903
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 927 ; free virtual = 3902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 928 ; free virtual = 3904
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 904 ; free virtual = 3881
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 669 ; free virtual = 3645
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|inst/\gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst       | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1   | 
+|inst/\gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1   | 
++-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 139 ; free virtual = 3005
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:30 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 170 ; free virtual = 3012
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:31 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 141 ; free virtual = 2983
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 125 ; free virtual = 2904
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 128 ; free virtual = 2907
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 158 ; free virtual = 2938
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 158 ; free virtual = 2938
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 157 ; free virtual = 2937
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 157 ; free virtual = 2937
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |    13|
+|3     |LUT2   |    31|
+|4     |LUT3   |    32|
+|5     |LUT4   |    42|
+|6     |LUT5   |    84|
+|7     |LUT6   |    52|
+|8     |RAM32M |     2|
+|9     |FDCE   |    46|
+|10    |FDPE   |    42|
+|11    |FDRE   |   191|
+|12    |FDSE   |     4|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1553.477 ; gain = 470.105 ; free physical = 157 ; free virtual = 2937
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:34 . Memory (MB): peak = 1553.477 ; gain = 482.688 ; free physical = 483 ; free virtual = 3234

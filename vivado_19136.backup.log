@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 30 11:25:10 2019
+# Process ID: 19136
+# Current directory: /home/ryunosuke/Works/zynqberrydemo1
+# Command line: vivado
+# Log file: /home/ryunosuke/Works/zynqberrydemo1/vivado.log
+# Journal file: /home/ryunosuke/Works/zynqberrydemo1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ryunosuke/Works/zynqberrydemo1/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'zsys_rst_processing_system7_0_50M_0' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_2' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_1' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'zsys_auto_pc_0' generated file not found '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'zsys.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+zsys_auto_pc_0
+zsys_auto_pc_2
+zsys_auto_pc_1
+
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 6246.938 ; gain = 270.922 ; free physical = 2986 ; free virtual = 7696
+update_compile_order -fileset sources_1
+update_module_reference zsys_test_LineBufPassThrough_0_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'Reset' as interface 'Reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'Clock' as interface 'Clock'.
+INFO: [IP_Flow 19-4728] Bus Interface 'Clock': Added interface parameter 'ASSOCIATED_RESET' with value 'Reset'.
+CRITICAL WARNING: [IP_Flow 19-3902] Can't open file to write: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/mref/test_LineBufPassThrough/xgui/test_LineBufPassThrough_v1_0.tcl.
+ERROR: [IP_Flow 19-862] XGUI layout file group does not exist.  A layout file at xgui/test_LineBufPassThrough_v1_0.tcl must exist and be added to the layout file group.
+WARNING: [IP_Flow 19-3153] Bus Interface 'Clock': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ryunosuke/Works/zynqberrydemo1/ip_lib'.
+Adding cell -- trenz.biz:user:axi_reg32:1.0 - axi_reg32_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- trenz.biz:user:axis_fb_conv:1.0 - axis_fb_conv_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_1
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- trenz.biz:user:Video_IO_2_HDMI_TMDS:1.0 - Video_IO_2_HDMI_TMDS_0
+Adding cell -- user.org:module_ref:test_LineBufPassThrough:1.0 - test_LineBufPassThrough_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_out/clk_wiz_1/clk_out1(clk) and /video_out/Video_IO_2_HDMI_TMDS_0/video_clk_in(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_out/clk_wiz_1/clk_out2(clk) and /video_out/Video_IO_2_HDMI_TMDS_0/video_clk5x_in(undef)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_3
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_4
+Adding cell -- trenz.biz:user:axis_raw_demosaic:1.0 - axis_raw_demosaic_0
+Adding cell -- trenz.biz:user:axis_raw_unpack:1.0 - axis_raw_unpack_0
+Adding cell -- trenz.biz:user:csi2_d_phy_rx:1.0 - csi2_d_phy_rx_0
+Adding cell -- trenz.biz:user:csi_to_axis:1.0 - csi_to_axis_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_in/csi2_d_phy_rx_0/rxbyteclkhs(undef) and /video_in/axis_data_fifo_0/s_axis_aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_in/csi2_d_phy_rx_0/rxbyteclkhs(undef) and /video_in/csi_to_axis_0/m_axis_aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_in/csi2_d_phy_rx_0/rxbyteclkhs(undef) and /video_in/proc_sys_reset_0/slowest_sync_clk(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- digilentinc.com:user:axi_i2s_adi:1.2 - axi_i2s_adi_0
+Adding cell -- trenz.biz:user:axis_to_i2s:1.0 - axis_to_i2s_0
+Adding cell -- trenz.biz:user:i2s_to_pwm:1.0 - i2s_to_pwm_0
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /audio/axi_aclk(clk) and /audio/i2s_to_pwm_0/clk_in(undef)
+Successfully read diagram <zsys> from BD file </home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd>
+Upgrading '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to reset run step 
+2. Failed to delete one or more files in run directory /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_test_LineBufPassThrough_0_1_synth_1
+
+ERROR: [Project 1-202] Error writing the XML file '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/synth_1/gen_run.xml'
+INFO: [IP_Flow 19-1972] Upgraded zsys_test_LineBufPassThrough_0_1 from test_LineBufPassThrough_v1_0 1.0 to test_LineBufPassThrough_v1_0 1.0
+Wrote  : </home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd> 
+Wrote  : </home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ui/bd_4addb273.ui> 
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6401.957 ; gain = 101.980 ; free physical = 2957 ; free virtual = 7581
+update_module_reference: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6401.957 ; gain = 101.980 ; free physical = 2957 ; free virtual = 7581
+add_files -norecurse /home/ryunosuke/Works/zynqberrydemo1/sources/passThrough.v
+update_module_reference zsys_test_LineBufPassThrough_0_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'Reset' as interface 'Reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'Clock' as interface 'Clock'.
+INFO: [IP_Flow 19-4728] Bus Interface 'Clock': Added interface parameter 'ASSOCIATED_RESET' with value 'Reset'.
+CRITICAL WARNING: [IP_Flow 19-3902] Can't open file to write: /home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/mref/test_LineBufPassThrough/xgui/test_LineBufPassThrough_v1_0.tcl.
+ERROR: [IP_Flow 19-862] XGUI layout file group does not exist.  A layout file at xgui/test_LineBufPassThrough_v1_0.tcl must exist and be added to the layout file group.
+WARNING: [IP_Flow 19-3153] Bus Interface 'Clock': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ryunosuke/Works/zynqberrydemo1/ip_lib'.
+Upgrading '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd'
+INFO: [IP_Flow 19-1972] Upgraded zsys_test_LineBufPassThrough_0_1 from test_LineBufPassThrough_v1_0 1.0 to test_LineBufPassThrough_v1_0 1.0
+Wrote  : </home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd> 
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/ip/zsys_test_LineBufPassThrough_0_1/zsys_test_LineBufPassThrough_0_1.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.srcs/sources_1/bd/zsys/zsys.bd
+
+ERROR: [Project 1-202] Error writing the XML file '/home/ryunosuke/Works/zynqberrydemo1/vivado/zynqberrydemo1.runs/zsys_xbar_0_synth_1/gen_run.xml'
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 30 11:27:54 2019...
